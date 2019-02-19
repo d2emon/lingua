@@ -599,6 +599,10 @@
     cssnano-preset-default "^4.0.0"
     postcss "^7.0.0"
 
+"@mdi/font@^3.4.93":
+  version "3.4.93"
+  resolved "https://registry.yarnpkg.com/@mdi/font/-/font-3.4.93.tgz#48f738c28aa49a5711811e03c59766a56844d119"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -7571,6 +7575,10 @@ vue-template-es2015-compiler@^1.8.2:
 vue@^2.5.22:
   version "2.6.6"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.6.tgz#dde41e483c11c46a7bf523909f4f2f816ab60d25"
+
+vuetify@^1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-1.5.2.tgz#7563b3ff4b7305f2dff724873f70b024f3672d96"
 
 vuex@^3.0.1:
   version "3.1.0"
