@@ -7,6 +7,9 @@
         <router-view></router-view>
       </v-container>
     </v-content>
+    <!-- v-content id="home">
+      <router-view />
+    </v-content -->
     <!-- main-footer / -->
   </v-app>
 </template>
