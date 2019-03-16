@@ -7,10 +7,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue';
-// import PagesList from '../components/PagesList.vue';
-
 export default {
   name: 'home',
   components: {

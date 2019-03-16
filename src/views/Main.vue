@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <!-- main-toolbar / -->
+    <main-toolbar />
     <!-- main-drawer / -->
     <v-content>
       <v-container fluid>
@@ -18,7 +18,7 @@
 export default {
   name: 'Main',
   components: {
-    // MainToolbar: () => import('@/components/MainToolbar'),
+    MainToolbar: () => import('@/components/MainToolbar'),
     // MainDrawer: () => import('@/components/MainDrawer'),
     // MainFooter: () => import('@/components/MainFooter'),
   },
