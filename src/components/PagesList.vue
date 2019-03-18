@@ -13,8 +13,7 @@
             <v-icon>mdi-view-module</v-icon>
           </v-btn>
         </v-toolbar>
-
-        <!-- v-list two-line subheader>
+        <v-list two-line subheader>
           <v-subheader inset>{{subtitle}}</v-subheader>
 
           <v-list-tile
@@ -31,7 +30,7 @@
               <v-list-tile-title>{{ page.title }}</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
-        </v-list -->
+        </v-list>
       </v-card>
     </v-flex>
   </v-layout>

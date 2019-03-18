@@ -1,16 +1,13 @@
 <template>
   <v-app>
     <main-toolbar />
-    <!-- main-drawer / -->
+    <main-drawer />
     <v-content>
       <v-container fluid>
         <router-view></router-view>
       </v-container>
     </v-content>
-    <!-- v-content id="home">
-      <router-view />
-    </v-content -->
-    <!-- main-footer / -->
+    <main-footer />
   </v-app>
 </template>
 
@@ -19,8 +16,8 @@ export default {
   name: 'Main',
   components: {
     MainToolbar: () => import('@/components/MainToolbar'),
-    // MainDrawer: () => import('@/components/MainDrawer'),
-    // MainFooter: () => import('@/components/MainFooter'),
+    MainDrawer: () => import('@/components/MainDrawer'),
+    MainFooter: () => import('@/components/MainFooter'),
   },
 };
 </script>

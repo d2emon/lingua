@@ -4,8 +4,13 @@ const state = {
   pages: [
     {
       title: 'Главная',
-      icon: 'mdi-folder',
+      icon: 'mdi-home',
       to: '/',
+    },
+    {
+      title: 'Группы',
+      icon: 'mdi-file-tree',
+      to: '/groups',
     },
     {
       title: 'О нас',
@@ -15,42 +20,42 @@ const state = {
     {
       title: 'Индоевропейские языки',
       icon: 'mdi-folder',
-      to: '/',
+      to: '/languages',
     },
     {
       title: 'Искусственные',
       icon: 'mdi-folder',
-      to: '/',
+      to: '/conlangs',
     },
     {
       title: 'Красота не спасет мир',
       icon: 'mdi-folder',
-      to: '/',
+      to: '/phraseology',
     },
     {
       title: 'Ложные друзья переводчика',
       icon: 'mdi-folder',
-      to: '/',
+      to: '/translate',
     },
     {
       title: 'Машинный перевод',
       icon: 'mdi-folder',
-      to: '/',
+      to: '/machine-translate',
     },
     {
       title: 'Русский язык',
       icon: 'mdi-folder',
-      to: '/',
+      to: '/russian',
     },
     {
       title: 'На разных языках',
       icon: 'mdi-folder',
-      to: '/',
+      to: '/translations',
     },
     {
       title: 'Сленг',
       icon: 'mdi-folder',
-      to: '/',
+      to: '/idioms',
     },
   ],
   items: [
