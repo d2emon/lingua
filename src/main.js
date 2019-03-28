@@ -6,6 +6,7 @@ import store from './store';
 import './plugins/vuetify';
 
 Vue.config.productionTip = false;
+Vue.config.devtools = true;
 
 new Vue({
   router,

@@ -1,0 +1,15 @@
+[
+  { "group": "palaic", "name": "Палайский", "dead": true },
+  { "group": "hittite", "name": "Хеттский", "dead": true },
+  { "group": "hittite", "name": "Карийский", "dead": true },
+  { "group": "hittite", "name": "Каппадокийский", "dead": true },
+  { "group": "luvic", "name": "Лувийский", "dead": true },
+  { "group": "luvic", "name": "Ликийский", "dead": true },
+  { "group": "luvic", "name": "Исаврский", "dead": true },
+  { "group": "luvic", "name": "Киликийский", "dead": true },
+  { "group": "luvic", "name": "Писидийский", "dead": true },
+  { "group": "luvic", "name": "Сидетский", "dead": true },
+  { "group": "lydic", "name": "Лидийский", "dead": true },
+  { "group": "troyan", "name": "Троянский", "dead": true },
+  { "group": "filistim", "name": "Филистимский", "dead": true }
+]
