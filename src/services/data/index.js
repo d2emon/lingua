@@ -32,7 +32,11 @@ export default {
         children: [],
         ...child,
       }));
-      const childLang = getChildrenLanguages(data.slug);
+      const childLang = [];
+      getChildrenLanguages(data.slug).forEach((lang) => {
+        childLang.push(lang);
+        children.push(lang);
+      });
       console.log(children, childLang, children + childLang);
 
       return {

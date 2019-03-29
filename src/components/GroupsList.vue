@@ -22,13 +22,22 @@
               transition
               expand-icon="mdi-chevron-down"
               loading-icon="mdi-loading"
+              v-model="tree"
             >
               <template v-slot:prepend="{ item, active }">
                 <v-icon
                   v-if="!item.children"
                   :color="active ? 'primary' : ''"
                 >
-                  mdi-folder
+                  mdi-translate
+                </v-icon>
+              </template>
+              <template v-slot:append="{ item }">
+                <v-icon
+                  v-if="item.dead"
+                  color="error"
+                >
+                  mdi-skull
                 </v-icon>
               </template>
             </v-treeview>
@@ -42,6 +51,8 @@
                 fluid
                 grid-list-lg
               >
+                Active: {{active}}
+                Tree: {{tree}}
                 <div
                   v-if="!selected"
                   class="title grey--text text--lighten-1 font-weight-light"
@@ -78,6 +89,7 @@ export default {
     active: [],
     open: [],
     avatar: null,
+    tree: [],
   }),
 
   computed: {
