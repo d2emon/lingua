@@ -16,6 +16,7 @@ const makeFamily = data => ({
   id: data.slug,
   children: [],
   ...data,
+  name: `${data.name}\t(${data.languagesCount})`,
 });
 
 const loadFamilies = () => new Promise(resolve => resolve(families.map(makeFamily)));
@@ -31,11 +32,7 @@ export default {
       console.log(familyId);
       if (!data) return null;
       const children = getChildren(data.slug)
-        .map(child => ({
-          id: child.slug,
-          children: [],
-          ...child,
-        }))
+        .map(makeFamily)
         .concat(getChildrenLanguages(data.slug));
       console.log(children);
       return {
@@ -43,6 +40,7 @@ export default {
         // name: item.name,
         ...data,
         children,
+        name: `${data.name}\t(${data.languagesCount})`,
       };
     }),
 };

@@ -1,6 +1,15 @@
 [
-  { "group": "sino-caucas", "name": "Баскский" },
+  { "group": "sino-caucas", "name": "Баскский", "count": 3 },
   { "group": "sino-caucas", "name": "Бурушаски" },
+  { "group": "dene-enisey", "name": "Нивхский" },
+  { "name": "Шумерский", "dead": true },
+  { "name": "Эламский", "dead": true },
+
+  { "group": "unclassified-european", "name": "Иберский", "dead": true },
+  { "group": "unclassified-european", "name": "Кипро-минойский", "dead": true },
+  { "group": "unclassified-european", "name": "Этеокритский", "dead": true },
+  { "group": "unclassified-european", "name": "Хаттский", "dead": true },
+  { "group": "unclassified-european", "name": "Каситский", "dead": true },
 
   { "group": "celtic-continental", "name": "Лепонтийский", "dead": true },
   { "group": "celtic-continental", "name": "Галльский", "dead": true },
