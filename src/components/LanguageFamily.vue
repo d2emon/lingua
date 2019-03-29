@@ -45,6 +45,100 @@
 
     <v-divider></v-divider>
 
+    <v-layout>
+      <v-flex xs6 v-if="family.image">
+        <v-img :src="family.image" />
+      </v-flex>
+      <v-flex xs6>
+        <v-card>
+          <v-card-title>Пример распределения таксонов по уровням</v-card-title>
+          <v-container>
+            <v-layout row wrap>
+              <v-flex xs2>макросемья, фила</v-flex>
+              <v-flex xs10>ностратическая макросемья</v-flex>
+            </v-layout>
+            <v-layout row wrap>
+              <v-flex xs2>семья</v-flex>
+              <v-flex xs10>индоевропейская</v-flex>
+            </v-layout>
+            <v-layout row wrap>
+              <v-flex xs2>подсемья</v-flex>
+              <v-flex xs10>«европейская»</v-flex>
+            </v-layout>
+            <v-layout row wrap>
+              <v-flex xs2>надветвь</v-flex>
+              <v-flex xs10>&nbsp;</v-flex>
+            </v-layout>
+            <v-layout row wrap>
+              <v-flex xs2>зона</v-flex>
+              <v-flex xs10>&nbsp;</v-flex>
+            </v-layout>
+            <v-layout row wrap>
+              <v-flex xs2>подзона</v-flex>
+              <v-flex xs10>&nbsp;</v-flex>
+            </v-layout>
+            <v-layout row wrap>
+              <v-flex xs2>ветвь</v-flex>
+              <v-flex xs10>балто-славянская</v-flex>
+            </v-layout>
+            <v-layout row wrap>
+              <v-flex xs2>подветвь</v-flex>
+              <v-flex xs10>&nbsp;</v-flex>
+            </v-layout>
+            <v-layout row wrap>
+              <v-flex xs2>группа</v-flex>
+              <v-flex xs10>славянская</v-flex>
+            </v-layout>
+            <v-layout row wrap>
+              <v-flex xs2>подгруппа</v-flex>
+              <v-flex xs10>восточнославянская</v-flex>
+            </v-layout>
+            <v-layout row wrap>
+              <v-flex xs2>подподгруппа</v-flex>
+              <v-flex xs10>&nbsp;</v-flex>
+            </v-layout>
+            <v-layout row wrap>
+              <v-flex xs2>микрогруппа</v-flex>
+              <v-flex xs10>&nbsp;</v-flex>
+            </v-layout>
+            <hr />
+            <v-layout row wrap>
+              <v-flex xs2>
+                <ul>
+                  <li>язык</li>
+                  <li>кластер</li>
+                </ul>
+              </v-flex>
+              <v-flex xs8>русско-белорусский кластер</v-flex>
+              <v-flex xs2>1 уровень [89-95% совпадений между составляющими]</v-flex>
+            </v-layout>
+            <v-layout row wrap>
+              <v-flex xs2>
+                <ul>
+                  <li>наречие</li>
+                  <li>язык</li>
+                </ul>
+              </v-flex>
+              <v-flex xs8>южнорусское наречие</v-flex>
+              <v-flex xs2>2 уровень [95-99%]</v-flex>
+            </v-layout>
+            <v-layout row wrap>
+              <v-flex xs2>диалект</v-flex>
+              <v-flex xs8>московская группа говоров</v-flex>
+              <v-flex xs2>3 уровень [99-100%]</v-flex>
+            </v-layout>
+            <v-layout row wrap>
+              <v-flex xs2>говор</v-flex>
+              <v-flex xs8>московский городской</v-flex>
+              <v-flex xs2>4 уровень</v-flex>
+            </v-layout>
+          </v-container>
+        </v-card>
+      </v-flex>
+    </v-layout>
+
+    <v-divider></v-divider>
+
     <v-layout
       v-if="family.company"
       tag="v-card-text"
@@ -61,8 +155,8 @@
       <v-flex>{{ family.phone }}</v-flex>
     </v-layout>
 
-    <v-img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/IndoEuropeanTree_ru.svg" />
     <v-img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Indo-European-languages.gif" />
+    <v-img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/120_World_Language.jpg" />
   </v-card>
 </template>
 

@@ -9,7 +9,7 @@
           justify-space-between
           pa-3
         >
-          <v-flex xs3>
+          <v-flex xs4>
             <v-treeview
               :active.sync="active"
               :items="groups"
@@ -22,7 +22,6 @@
               transition
               expand-icon="mdi-chevron-down"
               loading-icon="mdi-loading"
-              v-model="tree"
             >
               <template v-slot:prepend="{ item, active }">
                 <v-icon
@@ -51,14 +50,12 @@
                 fluid
                 grid-list-lg
               >
-                Active: {{active}}
-                Tree: {{tree}}
                 <div
                   v-if="!selected"
                   class="title grey--text text--lighten-1 font-weight-light"
                   style="align-self: center;"
                 >
-                  Select a User
+                  Выберите язык
                 </div>
 
                 <language-family
@@ -89,7 +86,6 @@ export default {
     active: [],
     open: [],
     avatar: null,
-    tree: [],
   }),
 
   computed: {

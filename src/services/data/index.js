@@ -1,4 +1,3 @@
-import familiesList from './families-list.json';
 import families from './families.json';
 import languages from './languages.json';
 
@@ -13,32 +12,32 @@ const getFamily = slug => families.find(family => family.slug === slug);
 const getChildren = slug => families.filter(family => family.parent === slug);
 const getChildrenLanguages = slug => languages.filter(language => language.group === slug);
 
-const loadFamilies = () => new Promise(resolve => resolve(familiesList));
+const makeFamily = data => ({
+  id: data.slug,
+  children: [],
+  ...data,
+});
 
+const loadFamilies = () => new Promise(resolve => resolve(families.map(makeFamily)));
 const loadFamily = slug => new Promise(resolve => resolve(getFamily(slug)));
 
+const getSubfamilies = slug => loadFamilies()
+  .then(data => data.filter(family => family.parent === slug));
+
 export default {
-  getFamilies: () => loadFamilies()
-    .then(data => data.map((name, id) => ({
-      id: id + 1,
-      slug: id2slug(id + 1),
-      name,
-      children: [],
-    }))),
+  getFamilies: () => getSubfamilies(),
   getFamily: familyId => loadFamily(familyId)
     .then((data) => {
+      console.log(familyId);
       if (!data) return null;
-      const children = getChildren(data.slug).map(child => ({
-        children: [],
-        ...child,
-      }));
-      const childLang = [];
-      getChildrenLanguages(data.slug).forEach((lang) => {
-        childLang.push(lang);
-        children.push(lang);
-      });
-      console.log(children, childLang, children + childLang);
-
+      const children = getChildren(data.slug)
+        .map(child => ({
+          id: child.slug,
+          children: [],
+          ...child,
+        }))
+        .concat(getChildrenLanguages(data.slug));
+      console.log(children);
       return {
         id: familyId,
         // name: item.name,

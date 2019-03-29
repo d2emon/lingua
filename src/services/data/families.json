@@ -1,5 +1,32 @@
 [
   {
+    "slug": "boreic",
+    "name": "Борейская гиперсемья"
+  },
+
+  {
+    "parent": "boreic",
+    "slug": "afroasian",
+    "name": "Афроазиaтские языки"
+  },
+  {
+    "parent": "afroasian",
+    "slug": "semitic",
+    "name": "Семитские языки"
+  },
+
+  {
+    "parent": "boreic",
+    "slug": "nostratic",
+    "name": "Ностратические языки"
+  },
+  {
+    "parent": "nostratic",
+    "slug": "nostratic-west",
+    "name": "Западно-ностратические языки"
+  },
+  {
+    "parent": "nostratic-west",
     "slug": "indoeuropeic",
     "name": "Индоевропейская семья",
     "description": "Индоевропе́йские языки́ — самая распространённая в мире языковая семья. Представлена на всех обитаемых континентах Земли, число носителей превышает 2,5 млрд. Согласно воззрениям некоторых современных языковедов, является частью макросемьи ностратических языков.",
@@ -10,10 +37,7 @@
     },
     "areal": "весь мир",
     "speakers": "2,7 млрд",
-    "classification": [
-      "Языки Евразии",
-      "Ностратическая макросемья (гипотеза)"
-    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/IndoEuropeanTree_ru.svg",
     "age": "V — VI тыс. лет назад",
     "codes": {
       "ГОСТ 7.75–97": "ино 208",
@@ -692,5 +716,161 @@
     "children": [
 
     ]
+  },
+  {
+    "parent": "nostratic-west",
+    "slug": "cartvellic",
+    "name": "Картвельские языки"
+  },
+
+  {
+    "parent": "nostratic",
+    "slug": "nostratic-east",
+    "name": "Восточно-ностратические языки"
+  },
+  {
+    "parent": "nostratic-east",
+    "slug": "altaic",
+    "name": "Алтайские языки"
+  },
+  {
+    "parent": "altaic",
+    "slug": "turc",
+    "name": "Тюркская ветвь"
+  },
+  {
+    "parent": "altaic",
+    "slug": "mongol",
+    "name": "Монгольская ветвь"
+  },
+  {
+    "parent": "altaic",
+    "slug": "tungus-manchzhour",
+    "name": "Тунгусо-манчжурская ветвь"
+  },
+  {
+    "parent": "altaic",
+    "slug": "japan-ryukyus",
+    "name": "Японо-рюкюсская ветвь"
+  },
+  {
+    "parent": "altaic",
+    "slug": "korean",
+    "name": "Корейская ветвь"
+  },
+
+  {
+    "parent": "nostratic-east",
+    "slug": "dravidic",
+    "name": "Дравидские языки"
+  },
+
+  {
+    "parent": "nostratic-east",
+    "slug": "ural",
+    "name": "Уральские языки"
+  },
+
+  {
+    "parent": "boreic",
+    "slug": "sino-caucas",
+    "name": "Сино-кавказские языки"
+  },
+
+  {
+    "parent": "sino-caucas",
+    "slug": "dene-enisey",
+    "name": "Дене-енисейские языки"
+  },
+  {
+    "parent": "dene-enisey",
+    "slug": "enisey",
+    "name": "Енисейские языки"
+  },
+  {
+    "parent": "dene-enisey",
+    "slug": "na-dene",
+    "name": "Языки на-дене"
+  },
+
+  {
+    "parent": "sino-caucas",
+    "slug": "caucas-north",
+    "name": "Северокавказские языки"
+  },
+  {
+    "parent": "caucas-north",
+    "slug": "abhaz-adygean",
+    "name": "Абхазо-адыгейские языки"
+  },
+  {
+    "parent": "caucas-north",
+    "slug": "nahsk-dagestan",
+    "name": "Нахско-дагестанские языки"
+  },
+
+  {
+    "parent": "sino-caucas",
+    "slug": "hurrite-urartu",
+    "name": "Хурито-урартские языки"
+  },
+
+  {
+    "parent": "sino-caucas",
+    "slug": "sino-tibetian",
+    "name": "Сино-тибетские языки"
+  },
+
+  {
+    "parent": "boreic",
+    "slug": "austric",
+    "name": "Аустрические языки"
+  },
+  {
+    "parent": "austric",
+    "slug": "austronesian",
+    "name": "Австронезийские языки"
+  },
+  {
+    "parent": "austric",
+    "slug": "myao-yao",
+    "name": "Языки мяо-яо"
+  },
+  {
+    "parent": "austric",
+    "slug": "tai-kadai",
+    "name": "Тай-кадайские языки"
+  },
+
+  {
+    "slug": "makro-zhe",
+    "name": "Макро-же языки"
+  },
+  {
+    "slug": "andaman",
+    "name": "Андаманские языки"
+  },
+  {
+    "slug": "shompen",
+    "name": "Шомпенский язык"
+  },
+  {
+    "slug": "paleoasian",
+    "name": "Палеоазиатские языки"
+  },
+  {
+    "parent": "paleoasian",
+    "slug": "chukcha-kamchadal",
+    "name": "Чукотско-камчатские языки"
+  },
+  {
+    "parent": "paleoasian",
+    "slug": "eskimo-aleuti",
+    "name": "Эскимосско-алеутские языки"
+  },
+  {
+    "parent": "paleoasian",
+    "slug": "yukagir",
+    "name": "Юкагирские языки"
   }
 ]

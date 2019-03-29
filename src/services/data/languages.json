@@ -1,4 +1,7 @@
 [
+  { "group": "sino-caucas", "name": "Баскский" },
+  { "group": "sino-caucas", "name": "Бурушаски" },
+
   { "group": "celtic-continental", "name": "Лепонтийский", "dead": true },
   { "group": "celtic-continental", "name": "Галльский", "dead": true },
   { "group": "celtic-continental", "name": "Галатский", "dead": true },
