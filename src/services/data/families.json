@@ -2,25 +2,59 @@
   {
     "slug": "boreic",
     "name": "Борейская гиперсемья",
-    "languagesCount": "2408+"
+    "languagesCount": 2448
   },
 
   {
     "parent": "boreic",
     "slug": "afroasian",
-    "name": "Афроазиaтские языки"
+    "name": "Афроазиaтские языки",
+    "languagesCount": 375
+  },
+  {
+    "parent": "afroasian",
+    "slug": "egiptian",
+    "name": "Египетская ветвь",
+    "dead": true,
+    "languagesCount": 5
+  },
+  {
+    "parent": "afroasian",
+    "slug": "berber-canarian",
+    "name": "Берберо-канарская ветвь",
+    "languagesCount": 26
+  },
+  {
+    "parent": "afroasian",
+    "slug": "chadian",
+    "name": "Чадская ветвь",
+    "languagesCount": 195
+  },
+  {
+    "parent": "afroasian",
+    "slug": "kushite",
+    "name": "Кушитская ветвь",
+    "languagesCount": 47
+  },
+  {
+    "parent": "afroasian",
+    "slug": "omote",
+    "name": "Омотская ветвь",
+    "languagesCount": 28
   },
   {
     "parent": "afroasian",
     "slug": "semitic",
-    "name": "Семитские языки"
+    "name": "Семитская ветвь",
+    "languagesCount": 77
   },
 
   {
     "parent": "boreic",
     "slug": "nostratic",
     "name": "Ностратические языки",
-    "languagesCount": 639
+    "languagesCount": 639,
+    "level": 0
   },
   {
     "parent": "nostratic",
@@ -47,7 +81,8 @@
       "ISO 639-2": "ine",
       "ISO 639-5": "ine"
     },
-    "languagesCount": 449
+    "languagesCount": 449,
+    "level": 1
   },
   {
     "parent": "indoeuropeic",
@@ -253,12 +288,14 @@
   {
     "parent": "indoeuropeic",
     "slug": "baltic-slavic",
-    "name": "Балто-славянская ветвь"
+    "name": "Балто-славянская ветвь",
+    "level": 6
   },
   {
     "parent": "baltic-slavic",
     "slug": "slavic",
-    "name": "Славянская группа"
+    "name": "Славянская группа",
+    "level": 8
   },
   {
     "parent": "slavic",
@@ -318,12 +355,14 @@
   {
     "parent": "slavic",
     "slug": "slavic-east",
-    "name": "Восточнославянские"
+    "name": "Восточнославянские",
+    "level": 9
   },
   {
     "parent": "slavic-east",
     "slug": "russian",
-    "name": "Русский"
+    "name": "Русский",
+    "level": 12
   },
   {
     "parent": "slavic-east",
@@ -784,14 +823,14 @@
     "parent": "boreic",
     "slug": "sino-caucas",
     "name": "Сино-кавказские языки",
-    "languagesCount": "409+"
+    "languagesCount": 449
   },
 
   {
     "parent": "sino-caucas",
     "slug": "dene-enisey",
     "name": "Дене-енисейские языки",
-    "languagesCount": "6+"
+    "languagesCount": 48
   },
   {
     "parent": "dene-enisey",
@@ -802,7 +841,8 @@
   {
     "parent": "dene-enisey",
     "slug": "na-dene",
-    "name": "Языки на-дене"
+    "name": "Языки на-дене",
+    "languagesCount": 42
   },
   {
     "parent": "dene-enisey",
@@ -883,7 +923,8 @@
 
   {
     "slug": "makro-zhe",
-    "name": "Макро-же языки"
+    "name": "Макро-же языки",
+    "languagesCount": 50
   },
   {
     "slug": "andaman",
@@ -891,13 +932,9 @@
     "languagesCount": 14
   },
   {
-    "slug": "shompen",
-    "name": "Шомпенский язык"
-  },
-  {
     "slug": "paleoasian",
     "name": "Палеоазиатские языки",
-    "languagesCount": "176+"
+    "languagesCount": 187
   },
   {
     "parent": "paleoasian",
@@ -908,7 +945,8 @@
   {
     "parent": "paleoasian",
     "slug": "eskimo-aleuti",
-    "name": "Эскимосско-алеутские языки"
+    "name": "Эскимосско-алеутские языки",
+    "languagesCount": 11
   },
   {
     "parent": "paleoasian",
@@ -936,15 +974,58 @@
   },
 
   {
+    "slug": "african",
+    "name": "Языки Африки",
+    "languagesCount": 1744
+  },
+  {
+    "parent": "african",
+    "slug": "niger-congo",
+    "name": "Нигеро-конголезские языки",
+    "languagesCount": 1514
+  },
+  {
+    "parent": "african",
+    "slug": "nile-saharian",
+    "name": "Нило-сахарские языки",
+    "languagesCount": 204
+  },
+  {
+    "parent": "african",
+    "slug": "coisan",
+    "name": "Койсанские языки",
+    "languagesCount": 26
+  },
+
+  {
+    "slug": "papuan",
+    "name": "Папуасские языки",
+    "languagesCount": 832
+  },
+
+  {
     "slug": "tirren",
     "name": "Тирренская семья",
     "dead": true,
     "languagesCount": 2
   },
+
   {
-    "slug": "unclassified-european",
+    "slug": "unclassified",
     "name": "Неклассифицированные языки",
+    "languagesCount": 20
+  },
+  {
+    "parent": "unclassified",
+    "slug": "unclassified-european",
+    "name": "Неклассифицированные языки Европы",
     "dead": true,
     "languagesCount": 12
+  },
+  {
+    "parent": "unclassified",
+    "slug": "unclassified-african",
+    "name": "Неклассифицированные языки Африки",
+    "languagesCount": 8
   }
 ]
