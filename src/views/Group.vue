@@ -8,7 +8,7 @@
 export default {
   name: 'Group',
   components: {
-    LanguageGroup: () => import('@/components/LanguageGroup.vue'),
+    LanguageGroup: () => import('@/containers/LanguageGroup.vue'),
   },
   computed: {
     group() { return this.$route.params.group; },

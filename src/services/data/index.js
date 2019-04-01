@@ -1,5 +1,6 @@
 import families from './families.json';
 import languages from './languages.json';
+import history from './history';
 
 // const PAUSE_TIME = 1500;
 // const pause = ms => new Promise(resolve => setTimeout(resolve, ms));
@@ -61,6 +62,7 @@ export default {
         id: familyId,
         // name: item.name,
         ...data,
+        history: history[data.slug],
         children,
         taxon
       };
