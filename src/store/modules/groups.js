@@ -21,18 +21,12 @@ const actions = {
   fetchGroups: ({ commit }, item) => fetchFamilies(item)
     .then(groups => commit('setGroups', groups)),
   fetchSubgroups: ({ commit }, item) => fetchSubgroups(item)
-    .then((groups) => {
-      console.log(item, groups);
-      return groups;
-    })
     .then(groups => commit('setSubgroups', { item, groups })),
-  selectGroup: ({ state, commit }, active) => {
-    console.log(active, active.length);
-    active.forEach(console.log);
-    if (!active.length) return commit('selectGroup', null);
-    return fetchFamily(active[0])
-      .then(selected => commit('selectGroup', selected));
-  },
+  selectGroup: ({ commit }, active) => fetchFamily(active)
+    .then(selected => commit('selectGroup', selected)),
+  selectGroups: ({ dispatch }, active) => dispatch('selectGroup', (!active.length)
+    ? null
+    : active[0]),
 };
 
 export default {

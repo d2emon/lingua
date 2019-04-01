@@ -12,6 +12,10 @@
         <v-flex tag="strong" xs4>Таксон:</v-flex>
         <v-flex xs8>{{ family.taxon }}</v-flex>
       </template>
+      <template v-if="family.languagesCount">
+        <v-flex tag="strong" xs4>Языков:</v-flex>
+        <v-flex xs8>{{ family.languagesCount }}</v-flex>
+      </template>
       <template v-if="family.areal">
         <v-flex tag="strong" xs4>Ареал:</v-flex>
         <v-flex xs8>{{ family.areal }}</v-flex>

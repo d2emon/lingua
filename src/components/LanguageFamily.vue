@@ -10,12 +10,14 @@
     <v-divider></v-divider>
 
     <v-layout
-      v-if="family.description"
       tag="v-card-text"
       text-xs-left
       wrap
     >
-      <v-flex xs8>
+      <v-flex
+        v-if="family.description"
+        xs8
+      >
         {{family.description}}
         <v-tabs
           v-model="active"

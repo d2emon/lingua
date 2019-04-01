@@ -20,6 +20,11 @@ export default new Router({
           component: () => import('./views/Groups.vue'),
         },
         {
+          path: 'groups/:group',
+          name: 'groups',
+          component: () => import('./views/Group.vue'),
+        },
+        {
           path: 'about',
           name: 'about',
           component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),

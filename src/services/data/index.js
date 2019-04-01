@@ -3,6 +3,27 @@ import languages from './languages.json';
 
 // const PAUSE_TIME = 1500;
 // const pause = ms => new Promise(resolve => setTimeout(resolve, ms));
+const FAMILY_TAXONS = {
+  0: 'макросемья',
+  1: 'семья',
+  2: 'подсемья',
+  3: 'надветвь',
+  4: 'зона',
+  5: 'подзона',
+  6: 'ветвь',
+  7: 'подветвь',
+  8: 'группа',
+  9: 'подгруппа',
+  10: 'подподгруппа',
+  11: 'микрогруппа',
+};
+const LANGUAGE_TAXONS = {
+  12: 'язык, кластер',
+  13: 'наречие, язык',
+  14: 'диалект',
+  15: 'говор',
+};
+
 
 const id2slug = (familyId) => {
   if (familyId === 7) return  'indoeuropeic';
@@ -16,7 +37,6 @@ const makeFamily = data => ({
   id: data.slug,
   children: [],
   ...data,
-  name: `${data.name}\t(${data.languagesCount})`,
 });
 
 const loadFamilies = () => new Promise(resolve => resolve(families.map(makeFamily)));
@@ -31,16 +51,18 @@ export default {
     .then((data) => {
       console.log(familyId);
       if (!data) return null;
+
       const children = getChildren(data.slug)
         .map(makeFamily)
         .concat(getChildrenLanguages(data.slug));
-      console.log(children);
+
+      const taxon = FAMILY_TAXONS[data.level];
       return {
         id: familyId,
         // name: item.name,
         ...data,
         children,
-        name: `${data.name}\t(${data.languagesCount})`,
+        taxon
       };
     }),
 };
