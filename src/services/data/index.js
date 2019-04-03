@@ -57,6 +57,7 @@ export default {
         .map(makeFamily)
         .concat(getChildrenLanguages(data.slug));
 
+      console.log(data.slug, children, getChildrenLanguages(data.slug))
       const taxon = FAMILY_TAXONS[data.level];
       return {
         id: familyId,

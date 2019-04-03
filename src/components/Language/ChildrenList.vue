@@ -7,7 +7,15 @@
       :to="`/groups/${child.slug}`"
     >
       <v-list-tile-content>
-        <v-list-tile-title v-html="child.name"></v-list-tile-title>
+        <v-list-tile-title>
+          {{child.name}}
+          <v-icon
+            v-if="child.dead"
+            color="error"
+          >
+            mdi-skull
+          </v-icon>
+        </v-list-tile-title>
       </v-list-tile-content>
     </v-list-tile>
   </v-list>

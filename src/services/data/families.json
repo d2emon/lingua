@@ -62,11 +62,12 @@
     "name": "Западно-ностратические языки",
     "languagesCount": 455
   },
+
   {
     "parent": "nostratic-west",
-    "slug": "indoeuropeic",
+    "slug": "indo-european",
     "name": "Индоевропейская семья",
-    "description": "Индоевропе́йские языки́ — самая распространённая в мире языковая семья. Представлена на всех обитаемых континентах Земли, число носителей превышает 2,5 млрд. Согласно воззрениям некоторых современных языковедов, является частью макросемьи ностратических языков.",
+    "description": "Индоевропейские языки — самая распространённая в мире языковая семья. Представлена на всех обитаемых континентах Земли, число носителей превышает 2,5 млрд. Согласно воззрениям некоторых современных языковедов, является частью макросемьи ностратических языков.",
     "areal": "весь мир",
     "speakers": "2,7 млрд",
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/IndoEuropeanTree_ru.svg",
@@ -74,13 +75,207 @@
     "languagesCount": 449,
     "level": 1
   },
+
   {
-    "parent": "indoeuropeic",
-    "slug": "arian",
-    "name": "Арийская ветвь"
+    "parent": "nostratic-west",
+    "slug": "anatolian",
+    "name": "Анатолийская (хетто-лувийская) ветвь",
+    "age": "...3500 BC - 4200 BC",
+    "dead": true,
+    "level": 6
   },
   {
-    "parent": "arian",
+    "parent": "anatolian",
+    "slug": "hittite",
+    "name": "Хеттская группа",
+    "dead": true,
+    "level": 9
+  },
+  {
+    "parent": "anatolian",
+    "slug": "lydian",
+    "name": "Лидийская группа",
+    "dead": true,
+    "level": 9
+  },
+  {
+    "parent": "anatolian",
+    "slug": "palaic",
+    "name": "Палайская группа",
+    "dead": true,
+    "level": 9
+  },
+  {
+    "parent": "anatolian",
+    "slug": "luwic",
+    "name": "Лувийская группа",
+    "dead": true,
+    "level": 9
+  },
+
+  { "parent": "indo-european", "slug": "centum", "name": "Кентум" },
+  {
+    "parent": "centum",
+    "slug": "tocharian",
+    "name": "Тохарская ветвь",
+    "age": "3700 BC",
+    "dead": true,
+    "level": 6
+  },
+  {
+    "parent": "centum",
+    "slug": "germanic",
+    "name": "Германская ветвь",
+    "age": "500 BC - 3300 BC",
+    "level": 6
+  },
+  {
+    "parent": "germanic",
+    "slug": "germanic-west",
+    "name": "Западногерманская группа",
+    "age": "500 BC - 100 BC",
+    "level": 8
+  },
+  {
+    "parent": "germanic-west",
+    "slug": "ingvaeonic",
+    "name": "Германские языки Северного моря"
+  },
+  {
+    "parent": "ingvaeonic",
+    "slug": "anglo-frisian",
+    "name": "Англо-фризская подгруппа",
+    "level": 9
+  },
+  {
+    "parent": "anglo-frisian",
+    "slug": "frisian",
+    "name": "Фризский кластер"
+  },
+  {
+    "parent": "anglo-frisian",
+    "slug": "anglic",
+    "name": "Английский кластер"
+  },
+  {
+    "parent": "ingvaeonic",
+    "slug": "low-german",
+    "name": "Нижненемецкая подгруппа",
+    "level": 9
+  },
+  {
+    "parent": "germanic-west",
+    "slug": "istvaeonic",
+    "name": "Нидерландские"
+  },
+  {
+    "parent": "germanic-west",
+    "slug": "irmionic",
+    "name": "Верхненемецкие"
+  },
+
+  {
+    "parent": "germanic",
+    "slug": "germanic-north",
+    "name": "Северогерманская (скандинавская) группа",
+    "age": "500 BC - 100 BC",
+    "level": 8
+  },
+  {
+    "parent": "germanic",
+    "slug": "germanic-east",
+    "name": "Восточногерманская группа",
+    "age": "500 BC - 100 BC",
+    "dead": true,
+    "level": 8
+  },
+
+
+  {
+    "parent": "centum",
+    "slug": "italic",
+    "name": "9. Италийская ветвь",
+    "age": "...2500 BC - 3000 BC",
+    "level": 6
+  },
+  {
+    "parent": "centum",
+    "slug": "celtic",
+    "name": "5. Кельтская ветвь",
+    "age": "...2500 BC - 3000 BC",
+    "level": 6
+  },
+  {
+    "parent": "centum",
+    "slug": "venetic",
+    "name": ". Венетская ветвь",
+    "dead": true,
+    "level": 6
+  },
+
+  { "parent": "indo-european", "slug": "satem", "name": "Сатем" },
+  {
+    "parent": "satem",
+    "slug": "paleo-balkan",
+    "name": "Палеобалканские языки",
+    "level": 6
+  },
+  {
+    "parent": "paleo-balkan",
+    "slug": "daco-thracian",
+    "name": "Фрако-дакийская (дакийская) группа",
+    "dead": true,
+    "level": 8
+  },
+  {
+    "parent": "paleo-balkan",
+    "slug": "illyrian",
+    "name": "Иллиро-мессапская (иллирийская) группа",
+    "level": 8
+  },
+  {
+    "parent": "paleo-balkan",
+    "slug": "graeco-armenian",
+    "name": "Греко-фригийско-армянская группа",
+    "age": "2500 BC... - 2800 BC (Armenian), 2500 BC (Greek)",
+    "level": 8
+  },
+  {
+    "parent": "graeco-armenian",
+    "slug": "hellenic",
+    "name": "Греческая подгруппа",
+    "level": 9
+  },
+  {
+    "parent": "graeco-armenian",
+    "slug": "phrygian-armenian",
+    "name": "Фригийско-армянская подгруппа",
+    "level": 9
+  },
+  {
+    "parent": "phrygian-armenian",
+    "slug": "armenian-group",
+    "name": "Армянская группа",
+    "level": 10
+  },
+
+  {
+    "parent": "satem",
+    "slug": "indo-iranian",
+    "name": "8. Арийская ветвь",
+    "age": "2000 BC - 2200 BC",
+    "level": 6
+  },
+  {
+    "parent": "satem",
+    "slug": "balto-slavic",
+    "name": "4. Балто-славянская ветвь",
+    "age": "500 BC - 2800 BC",
+    "level": 6
+  },
+
+  {
+    "parent": "indo-iranian",
     "slug": "nuristan-subbranch",
     "name": "Нуристанская подветвь"
   },
@@ -100,32 +295,32 @@
     "name": "Северно-кафирская подгруппа"
   },
   {
-    "parent": "arian",
+    "parent": "indo-iranian",
     "slug": "indian-iranic",
     "name": "Индоиранская подветвь"
   },
   {
     "parent": "indian-iranic",
-    "slug": "indian-arian",
+    "slug": "indian-aryan",
     "name": "Индоарийская группа"
   },
   {
-    "parent": "indian-arian",
-    "slug": "indian-arian-island",
+    "parent": "indian-aryan",
+    "slug": "indian-aryan-island",
     "name": "Островная подгруппа"
   },
   {
-    "parent": "indian-arian",
-    "slug": "indian-arian-continental",
+    "parent": "indian-aryan",
+    "slug": "indian-aryan-continental",
     "name": "Материковая подгруппа"
   },
   {
-    "parent": "indian-arian-continental",
-    "slug": "indian-arian-continental-central",
+    "parent": "indian-aryan-continental",
+    "slug": "indian-aryan-continental-central",
     "name": "Центральный кластер"
   },
   {
-    "parent": "indian-arian-continental-central",
+    "parent": "indian-aryan-continental-central",
     "slug": "hindi",
     "name": "Хинди"
   },
@@ -145,22 +340,22 @@
     "name": "Восточный хинди"
   },
   {
-    "parent": "indian-arian-continental",
-    "slug": "indian-arian-continental-east",
+    "parent": "indian-aryan-continental",
+    "slug": "indian-aryan-continental-east",
     "name": "Восточный кластер"
   },
   {
-    "parent": "indian-arian-continental-east",
+    "parent": "indian-aryan-continental-east",
     "slug": "biharian",
     "name": "Бихарские"
   },
   {
-    "parent": "indian-arian-continental",
-    "slug": "indian-arian-continental-north-west",
+    "parent": "indian-aryan-continental",
+    "slug": "indian-aryan-continental-north-west",
     "name": "Северо-западный кластер"
   },
   {
-    "parent": "indian-arian-continental-north-west",
+    "parent": "indian-aryan-continental-north-west",
     "slug": "lahnda",
     "name": "Лахнда"
   },
@@ -220,69 +415,9 @@
     "slug": "farsi",
     "name": "Персидский"
   },
+
   {
-    "parent": "indoeuropeic",
-    "slug": "greek-frigic-armeniac",
-    "name": "Греко-фригийско-армянская ветвь",
-    "children": [
-    ]
-  },
-  {
-    "parent": "greek-frigic-armeniac",
-    "slug": "frigic",
-    "name": "Фригийская группа",
-    "dead": true
-  },
-  {
-    "parent": "greek-frigic-armeniac",
-    "slug": "armenic-group",
-    "name": "Армянская группа"
-  },
-  {
-    "parent": "armenic-group",
-    "slug": "armenic",
-    "name": "Армянский"
-  },
-  {
-    "parent": "greek-frigic-armeniac",
-    "slug": "greek",
-    "name": "Греческая группа"
-  },
-  {
-    "parent": "greek-frigic-armeniac",
-    "slug": "greek-gipsy",
-    "name": "Парацыганские языки на греческой основе"
-  },
-  {
-    "parent": "indoeuropeic",
-    "slug": "paleobalcanic",
-    "name": "Палеобалканские языки"
-  },
-  {
-    "parent": "paleobalcanic",
-    "slug": "illyric",
-    "name": "Иллирийская группа",
-    "dead": true
-  },
-  {
-    "parent": "paleobalcanic",
-    "slug": "illyric-alban",
-    "name": "Иллирийско-Албанская группа"
-  },
-  {
-    "parent": "paleobalcanic",
-    "slug": "thracian",
-    "name": "Фракийская группа",
-    "dead": true
-  },
-  {
-    "parent": "indoeuropeic",
-    "slug": "baltic-slavic",
-    "name": "Балто-славянская ветвь",
-    "level": 6
-  },
-  {
-    "parent": "baltic-slavic",
+    "parent": "balto-slavic",
     "slug": "slavic",
     "name": "Славянская группа",
     "level": 8
@@ -360,12 +495,12 @@
     "name": "Украинский"
   },
   {
-    "parent": "baltic-slavic",
+    "parent": "balto-slavic",
     "slug": "slavic-gipsy",
     "name": "Парацыганские языки на славянской основе"
   },
   {
-    "parent": "baltic-slavic",
+    "parent": "balto-slavic",
     "slug": "baltic",
     "name": "Балтийская группа"
   },
@@ -392,69 +527,9 @@
     "name": "Днепровско-окский",
     "dead": true
   },
+
   {
-    "parent": "indoeuropeic",
-    "slug": "german",
-    "name": "Германская ветвь"
-  },
-  {
-    "parent": "german",
-    "slug": "german-west",
-    "name": "Западногерманская группа"
-  },
-  {
-    "parent": "german-west",
-    "slug": "english-frise",
-    "name": "Англо-фризская подгруппа"
-  },
-  {
-    "parent": "english-frise",
-    "slug": "frise-cluster",
-    "name": "Фризский кластер"
-  },
-  {
-    "parent": "english-frise",
-    "slug": "english-cluster",
-    "name": "Английский кластер"
-  },
-  {
-    "parent": "english-cluster",
-    "slug": "english",
-    "name": "Английский"
-  },
-  {
-    "parent": "german",
-    "slug": "german-cluster",
-    "name": "Германский кластер"
-  },
-  {
-    "parent": "german-cluster",
-    "slug": "german-south",
-    "name": "Южногерманская подгруппа"
-  },
-  {
-    "parent": "german-south",
-    "slug": "lower-german",
-    "name": "Нижненемецкая подгруппа"
-  },
-  {
-    "parent": "lower-german",
-    "slug": "normandic",
-    "name": "Нормандский",
-    "dead": true
-  },
-  {
-    "parent": "german-south",
-    "slug": "upper-german",
-    "name": "Верхненемецкая подгруппа"
-  },
-  {
-    "parent": "german",
-    "slug": "german-north",
-    "name": "Северогерманская (скандинавская) группа"
-  },
-  {
-    "parent": "german-north",
+    "parent": "germanic-north",
     "slug": "skandinavic-island",
     "name": "Островная подгруппа"
   },
@@ -465,7 +540,7 @@
     "dead": true
   },
   {
-    "parent": "german-north",
+    "parent": "germanic-north",
     "slug": "skandinavic-continental",
     "name": "Континентальная подгруппа"
   },
@@ -514,33 +589,16 @@
     "dead": true
   },
   {
-    "parent": "german",
-    "slug": "german-east",
-    "name": "Восточногерманская группа",
-    "dead": true
-  },
-  {
-    "parent": "german",
-    "slug": "german-creol",
+    "parent": "germanic",
+    "slug": "germanic-creol",
     "name": "Креольские языки на германской основе"
   },
   {
-    "parent": "german",
-    "slug": "german-gipsy",
+    "parent": "germanic",
+    "slug": "germanic-gipsy",
     "name": "Парацыганские языки на германской основе"
   },
-  {
-    "parent": "indoeuropeic",
-    "slug": "venetic",
-    "name": "Венетская ветвь",
-    "dead": true,
-    "children": []
-  },
-  {
-    "parent": "indoeuropeic",
-    "slug": "italic",
-    "name": "Италийская ветвь"
-  },
+
   {
     "parent": "italic",
     "slug": "sabelic",
@@ -660,11 +718,7 @@
     "slug": "romanic-gipsy",
     "name": "Парацыганские языки на романской основе"
   },
-  {
-    "parent": "indoeuropeic",
-    "slug": "celtic",
-    "name": "Кельтская ветвь"
-  },
+
   {
     "parent": "celtic",
     "slug": "celtic-continental",
@@ -692,64 +746,8 @@
     "slug": "celtic-gipsy",
     "name": "Парацыганские языки на кельтской основе"
   },
-  {
-    "parent": "indoeuropeic",
-    "slug": "tohar",
-    "name": "Тохарская ветвь",
-    "dead": true,
-    "children": []
-  },
-  {
-    "parent": "indoeuropeic",
-    "slug": "anatolic",
-    "name": "Анатолийская (хетто-лувийская) ветвь",
-    "dead": true,
-    "children": []
-  },
-  {
-    "parent": "anatolic",
-    "slug": "palaic",
-    "name": "Палайская группа",
-    "dead": true
-  },
-  {
-    "parent": "anatolic",
-    "slug": "hittite",
-    "name": "Хеттская группа",
-    "dead": true
-  },
-  {
-    "parent": "anatolic",
-    "slug": "luvic",
-    "name": "Лувийская группа",
-    "dead": true
-  },
-  {
-    "parent": "anatolic",
-    "slug": "lydic",
-    "name": "Лидийская группа",
-    "dead": true
-  },
-  {
-    "parent": "anatolic",
-    "slug": "troyan",
-    "name": "Троянская группа",
-    "dead": true
-  },
-  {
-    "parent": "anatolic",
-    "slug": "filistim",
-    "name": "Филистимская группа",
-    "dead": true
-  },
-  {
-    "parent": "indoeuropeic",
-    "slug": "unapproved",
-    "name": "Отвергнутые или недостоверные гипотезы",
-    "children": [
 
-    ]
-  },
+
   {
     "parent": "nostratic-west",
     "slug": "cartvellic",
