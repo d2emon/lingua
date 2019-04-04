@@ -1,0 +1,101 @@
+[
+  { "parent": "indo-european", "slug": "centum", "name": "Кентум" },
+  {
+    "parent": "centum",
+    "slug": "tocharian",
+    "name": "Тохарская ветвь",
+    "age": "3700 BC",
+    "dead": true,
+    "level": 6
+  },
+  {
+    "parent": "centum",
+    "slug": "germanic",
+    "name": "Германская ветвь",
+    "age": "500 BC - 3300 BC",
+    "level": 6
+  },
+  {
+    "parent": "germanic",
+    "slug": "germanic-west",
+    "name": "Западногерманская группа",
+    "age": "500 BC - 100 BC",
+    "level": 8
+  },
+  {
+    "parent": "germanic-west",
+    "slug": "ingvaeonic",
+    "name": "Германские языки Северного моря"
+  },
+  {
+    "parent": "ingvaeonic",
+    "slug": "anglo-frisian",
+    "name": "Англо-фризская подгруппа",
+    "level": 9
+  },
+  {
+    "parent": "anglo-frisian",
+    "slug": "frisian",
+    "name": "Фризский кластер"
+  },
+  {
+    "parent": "anglo-frisian",
+    "slug": "anglic",
+    "name": "Английский кластер"
+  },
+  {
+    "parent": "ingvaeonic",
+    "slug": "low-german",
+    "name": "Нижненемецкая подгруппа",
+    "level": 9
+  },
+  {
+    "parent": "germanic-west",
+    "slug": "istvaeonic",
+    "name": "Нидерландские"
+  },
+  {
+    "parent": "germanic-west",
+    "slug": "irmionic",
+    "name": "Верхненемецкие"
+  },
+
+  {
+    "parent": "germanic",
+    "slug": "germanic-north",
+    "name": "Северогерманская (скандинавская) группа",
+    "age": "500 BC - 100 BC",
+    "level": 8
+  },
+  {
+    "parent": "germanic",
+    "slug": "germanic-east",
+    "name": "Восточногерманская группа",
+    "age": "500 BC - 100 BC",
+    "dead": true,
+    "level": 8
+  },
+
+
+  {
+    "parent": "centum",
+    "slug": "italic",
+    "name": "9. Италийская ветвь",
+    "age": "...2500 BC - 3000 BC",
+    "level": 6
+  },
+  {
+    "parent": "centum",
+    "slug": "celtic",
+    "name": "5. Кельтская ветвь",
+    "age": "...2500 BC - 3000 BC",
+    "level": 6
+  },
+  {
+    "parent": "centum",
+    "slug": "venetic",
+    "name": ". Венетская ветвь",
+    "dead": true,
+    "level": 6
+  }
+]

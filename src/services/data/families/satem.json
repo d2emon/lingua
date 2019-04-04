@@ -1,0 +1,62 @@
+[
+  { "parent": "indo-european", "slug": "satem", "name": "Сатем" },
+  {
+    "parent": "satem",
+    "slug": "paleo-balkan",
+    "name": "Палеобалканские языки",
+    "level": 6
+  },
+  {
+    "parent": "paleo-balkan",
+    "slug": "daco-thracian",
+    "name": "Фрако-дакийская (дакийская) группа",
+    "dead": true,
+    "level": 8
+  },
+  {
+    "parent": "paleo-balkan",
+    "slug": "illyrian",
+    "name": "Иллиро-мессапская (иллирийская) группа",
+    "level": 8
+  },
+  {
+    "parent": "paleo-balkan",
+    "slug": "graeco-armenian",
+    "name": "Греко-фригийско-армянская группа",
+    "age": "2500 BC... - 2800 BC (Armenian), 2500 BC (Greek)",
+    "level": 8
+  },
+  {
+    "parent": "graeco-armenian",
+    "slug": "hellenic",
+    "name": "Греческая подгруппа",
+    "level": 9
+  },
+  {
+    "parent": "graeco-armenian",
+    "slug": "phrygian-armenian",
+    "name": "Фригийско-армянская подгруппа",
+    "level": 9
+  },
+  {
+    "parent": "phrygian-armenian",
+    "slug": "armenian-group",
+    "name": "Армянская группа",
+    "level": 10
+  },
+
+  {
+    "parent": "satem",
+    "slug": "indo-iranian",
+    "name": "8. Арийская ветвь",
+    "age": "2000 BC - 2200 BC",
+    "level": 6
+  },
+  {
+    "parent": "satem",
+    "slug": "balto-slavic",
+    "name": "4. Балто-славянская ветвь",
+    "age": "500 BC - 2800 BC",
+    "level": 6
+  }
+]
