@@ -55,8 +55,114 @@
   {
     "parent": "satem",
     "slug": "balto-slavic",
-    "name": "4. Балто-славянская ветвь",
+    "name": "Балто-славянская ветвь",
     "age": "500 BC - 2800 BC",
     "level": 6
+  },
+  {
+    "parent": "balto-slavic",
+    "slug": "slavic",
+    "name": "Славянская группа",
+    "level": 8
+  },
+  {
+    "parent": "slavic",
+    "slug": "slavic-south",
+    "name": "Южнославянские"
+  },
+  {
+    "parent": "slavic-south",
+    "slug": "slavic-south-east",
+    "name": "Юго-восточная подгруппа"
+  },
+  {
+    "parent": "slavic-south-east",
+    "slug": "old-slavic",
+    "name": "Старославянский"
+  },
+  {
+    "parent": "slavic-south",
+    "slug": "slavic-south-east",
+    "name": "Юго-западная подгруппа"
+  },
+  {
+    "parent": "slavic-south-west",
+    "slug": "serbian-croatian",
+    "name": "Сербохорватский"
+  },
+  {
+    "parent": "serbian-croatian",
+    "slug": "serbian",
+    "name": "Сербский"
+  },
+  {
+    "parent": "serbian-croatian",
+    "slug": "croatian",
+    "name": "Хорватский"
+  },
+  {
+    "parent": "slavic",
+    "slug": "slavic-west",
+    "name": "Западнославянские"
+  },
+  {
+    "parent": "slavic-west",
+    "slug": "lehitic",
+    "name": "Лехитская подгруппа"
+  },
+  {
+    "parent": "slavic-west",
+    "slug": "louzhic",
+    "name": "Лужицкая подгруппа"
+  },
+  {
+    "parent": "slavic-west",
+    "slug": "chech-slovak",
+    "name": "Чехословацкая подгруппа"
+  },
+  {
+    "parent": "slavic",
+    "slug": "slavic-east",
+    "name": "Восточнославянские",
+    "level": 9
+  },
+  {
+    "parent": "slavic-east",
+    "slug": "russian",
+    "name": "Русский",
+    "level": 12
+  },
+  {
+    "parent": "slavic-east",
+    "slug": "ukrainian",
+    "name": "Украинский"
+  },
+  {
+    "parent": "balto-slavic",
+    "slug": "baltic",
+    "name": "Балтийская группа"
+  },
+  {
+    "parent": "baltic",
+    "slug": "baltic-east",
+    "name": "Восточная подгруппа"
+  },
+  {
+    "parent": "baltic",
+    "slug": "baltic-west",
+    "name": "Западная подгруппа",
+    "dead": true
+  },
+  {
+    "parent": "baltic",
+    "slug": "dnieper-okish-subgroup",
+    "name": "Днепровско-окская подгруппа",
+    "dead": true
+  },
+  {
+    "parent": "baltic",
+    "slug": "dnieper-okish-subgroup",
+    "name": "Днепровско-окский",
+    "dead": true
   }
 ]

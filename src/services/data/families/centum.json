@@ -123,22 +123,174 @@
   {
     "parent": "centum",
     "slug": "italic",
-    "name": "9. Италийская ветвь",
+    "name": "Италийская ветвь",
     "age": "...2500 BC - 3000 BC",
     "level": 6
   },
+  {
+    "parent": "italic",
+    "slug": "latino-faliskan",
+    "name": "Латино-фалискская группа"
+  },
+  {
+    "parent": "latino-faliskan",
+    "slug": "romance",
+    "name": "Романская группа",
+    "level": 8
+  },
+  {
+    "parent": "romance",
+    "slug": "romance-west",
+    "name": "Западно-романские языки"
+  },
+  {
+    "parent": "romance-west",
+    "slug": "iberian-romance",
+    "name": "Иберо-романская подгруппа"
+  },
+  {
+    "parent": "iberian-romance",
+    "slug": "gallo-romance",
+    "name": "Галло-романская подгруппа"
+  },
+  {
+    "parent": "gallo-romance",
+    "slug": "oxitan-romance",
+    "name": "Окситано-романская подгруппа"
+  },
+  {
+    "parent": "gallo-romance",
+    "slug": "rhaeto-romance",
+    "name": "Рето-романская подгруппа"
+  },
+  {
+    "parent": "iberian-romance",
+    "slug": "iberian-west",
+    "name": "Западно-иберийские языки"
+  },
+  {
+    "parent": "iberian-west",
+    "slug": "astur-leonese",
+    "name": "Астурлеонский язык"
+  },
+  {
+    "parent": "iberian-west",
+    "slug": "castillian",
+    "name": "Испанские языки"
+  },
+  {
+    "parent": "iberian-west",
+    "slug": "galician-potuguese",
+    "name": "Галисийско-португальские языки"
+  },
+
+  {
+    "parent": "romance-west",
+    "slug": "italic-romance",
+    "name": "Италийско-романская подгруппа"
+  },
+  {
+    "parent": "italic-romance",
+    "slug": "italic-north",
+    "name": "Северные диалекты"
+  },
+  {
+    "parent": "italic-romance",
+    "slug": "italic-central",
+    "name": "Центральные диалекты"
+  },
+  {
+    "parent": "italic-romance",
+    "slug": "italic-south",
+    "name": "Южные диалекты"
+  },
+  {
+    "parent": "italic-romance",
+    "slug": "italic-island",
+    "name": "Островные диалекты"
+  },
+
+  {
+    "parent": "romance",
+    "slug": "romance-east",
+    "name": "Балкано-романские языки"
+  },
+  {
+    "parent": "romance-east",
+    "slug": "danubian-north",
+    "name": "Северодунайские языки"
+  },
+  {
+    "parent": "romance-east",
+    "slug": "danubian-south",
+    "name": "Южнодунайские языки"
+  },
+
+  {
+    "parent": "italic-south",
+    "slug": "apulic",
+    "name": "Апулийский"
+  },
+  {
+    "parent": "italic-south",
+    "slug": "sicylic",
+    "name": "Сицилийский"
+  },
+  {
+    "parent": "italic-island",
+    "slug": "sardinic",
+    "name": "Сардинский"
+  },
+
+  {
+    "parent": "italic",
+    "slug": "osco-umbrian",
+    "name": "Оскско-умбрская (сабельская) группа",
+    "dead": true
+  },
+
   {
     "parent": "centum",
     "slug": "celtic",
-    "name": "5. Кельтская ветвь",
+    "name": "Кельтская ветвь",
     "age": "...2500 BC - 3000 BC",
     "level": 6
   },
   {
-    "parent": "centum",
-    "slug": "venetic",
-    "name": ". Венетская ветвь",
-    "dead": true,
-    "level": 6
+    "parent": "celtic",
+    "slug": "celtic-continental",
+    "name": "Континентальная группа",
+    "dead": true
+  },
+  {
+    "parent": "celtic-continental",
+    "slug": "spanish-celtic",
+    "name": "Испано-кельтские языки",
+    "dead": true
+  },
+  {
+    "parent": "celtic",
+    "slug": "celtic-insular",
+    "name": "Островная группа"
+  },
+  {
+    "parent": "celtic-insular",
+    "slug": "goidelic",
+    "name": "Гойдельская группа"
+  },
+  {
+    "parent": "celtic-insular",
+    "slug": "brittonic",
+    "name": "Бриттская группа"
+  },
+  {
+    "parent": "brittonic",
+    "slug": "brittonic-west",
+    "name": "Западные бриттские языки"
+  },
+  {
+    "parent": "brittonic",
+    "slug": "brittonic-southwest",
+    "name": "Юго-западные бриттские языки"
   }
 ]
