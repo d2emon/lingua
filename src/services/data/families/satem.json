@@ -47,13 +47,6 @@
 
   {
     "parent": "satem",
-    "slug": "indo-iranian",
-    "name": "8. Арийская ветвь",
-    "age": "2000 BC - 2200 BC",
-    "level": 6
-  },
-  {
-    "parent": "satem",
     "slug": "balto-slavic",
     "name": "Балто-славянская ветвь",
     "age": "500 BC - 2800 BC",
@@ -143,6 +136,179 @@
     "parent": "slavic-south-west",
     "slug": "serbo-croatian",
     "name": "Сербохорватский"
-  }
+  },
 
+  {
+    "parent": "satem",
+    "slug": "indo-iranian",
+    "name": "Индоиранская ветвь",
+    "age": "2000 BC - 2200 BC",
+    "level": 6
+  },
+
+  {
+    "parent": "indo-iranian",
+    "slug": "nuristani-subbranch",
+    "name": "Нуристанская подветвь",
+    "level": 7
+  },
+  {
+    "parent": "indo-iranian",
+    "slug": "indo-iranian-subbranch",
+    "name": "Индоиранская подветвь",
+    "level": 7
+  },
+  {
+    "parent": "indo-iranian-subbranch",
+    "slug": "dardic",
+    "name": "Дардская группа",
+    "level": 8
+  },
+  {
+    "parent": "indo-iranian-subbranch",
+    "slug": "indo-aryan",
+    "name": "Индоарийская группа",
+    "level": 8
+  },
+  {
+    "parent": "indo-aryan",
+    "slug": "indo-aryan-island",
+    "name": "Островная подгруппа",
+    "level": 9
+  },
+  {
+    "parent": "indo-aryan",
+    "slug": "indo-aryan-continental",
+    "name": "Материковая подгруппа",
+    "level": 9
+  },
+  {
+    "parent": "indo-aryan-continental",
+    "slug": "indo-aryan-continental-north",
+    "name": "Северная группа (пахари)"
+  },
+  {
+    "parent": "indo-aryan-continental",
+    "slug": "indo-aryan-continental-north-west",
+    "name": "Северо-западный кластер"
+  },
+  {
+    "parent": "indo-aryan-continental",
+    "slug": "indo-aryan-continental-west",
+    "name": "Западная группа"
+  },
+  {
+    "parent": "indo-aryan-continental",
+    "slug": "indo-aryan-continental-central",
+    "name": "Центральный кластер"
+  },
+  {
+    "parent": "indo-aryan-continental",
+    "slug": "indo-aryan-continental-east",
+    "name": "Восточный кластер"
+  },
+  {
+    "parent": "indo-aryan-continental",
+    "slug": "indo-aryan-continental-south",
+    "name": "Западная группа"
+  },
+  {
+    "parent": "indo-iranian-subbranch",
+    "slug": "iranian",
+    "name": "Иранская группа",
+    "level": 8
+  },
+
+  {
+    "parent": "nuristan-subbranch",
+    "slug": "nuristan",
+    "name": "Нуристанская группа"
+  },
+  {
+    "parent": "nuristan",
+    "slug": "cafir-south",
+    "name": "Южно-кафирская подгруппа"
+  },
+  {
+    "parent": "nuristan",
+    "slug": "cafir-north",
+    "name": "Северно-кафирская подгруппа"
+  },
+
+  {
+    "parent": "indo-aryan-continental-central",
+    "slug": "hindi",
+    "name": "Хинди"
+  },
+  {
+    "parent": "hindi",
+    "slug": "hindi-west",
+    "name": "Западный хинди"
+  },
+  {
+    "parent": "hindi-west",
+    "slug": "hindustani",
+    "name": "Хиндустани"
+  },
+  {
+    "parent": "hindi",
+    "slug": "hindi-east",
+    "name": "Восточный хинди"
+  },
+  {
+    "parent": "indo-aryan-continental-east",
+    "slug": "biharian",
+    "name": "Бихарские"
+  },
+  {
+    "parent": "indo-aryan-continental-north-west",
+    "slug": "lahnda",
+    "name": "Лахнда"
+  },
+  {
+    "parent": "iranian",
+    "slug": "iranian-north-east",
+    "name": "Северо-восточные иранские"
+  },
+  {
+    "parent": "iranian-north-east",
+    "slug": "sogdian",
+    "name": "Согдийский",
+    "dead": true
+  },
+  {
+    "parent": "iranian",
+    "slug": "iranian-south-east",
+    "name": "Юго-восточные иранские"
+  },
+  {
+    "parent": "iranian-south-east",
+    "slug": "sacish",
+    "name": "Сакские"
+  },
+  {
+    "parent": "iranian-south-east",
+    "slug": "pamire",
+    "name": "Памирские"
+  },
+  {
+    "parent": "iranian",
+    "slug": "iranian-north-west",
+    "name": "Северо-западные иранские"
+  },
+  {
+    "parent": "iranian-north-west",
+    "slug": "caspian",
+    "name": "Диалекты Прикаспия"
+  },
+  {
+    "parent": "iranian",
+    "slug": "iranian-south-west",
+    "name": "Юго-западные иранские"
+  },
+  {
+    "parent": "iranian-south-west",
+    "slug": "farsi",
+    "name": "Персидский"
+  }
 ]
