@@ -8,6 +8,16 @@
     >
       <v-list-tile-content>
         <v-list-tile-title>
+          <v-icon
+            v-if="child.language"
+          >
+            mdi-translate
+          </v-icon>
+          <v-icon
+            v-else
+          >
+            mdi-folder
+          </v-icon>
           {{child.name}}
           <v-icon
             v-if="child.dead"

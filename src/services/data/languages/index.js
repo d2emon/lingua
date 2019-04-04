@@ -3,7 +3,8 @@ import taxons from './taxons.json';
 
 export default Promise.resolve(
   defaultLanguages.map(language => ({
-    ...language,
+    language: true,
     taxon: taxons[language.level],
+    ...language,
   })),
 );

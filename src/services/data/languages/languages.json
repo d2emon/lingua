@@ -106,6 +106,23 @@
   { "group": "goidelic", "name": "Гэльский" },
   { "group": "goidelic", "name": "Мэнский" },
 
+  { "group": "baltic-east", "name": "Литовский" },
+  { "group": "baltic-east", "name": "Латвийский" },
+  { "group": "prusso-yotvingian", "name": "Прусский", "dead": true },
+  { "group": "prusso-yotvingian", "name": "Ятвяжский", "dead": true },
+  { "group": "prusso-yotvingian", "name": "Галиндский", "dead": true },
+  { "group": "baltic-west", "name": "Куршский", "dead": true },
+  { "group": "baltic-west", "name": "Поморско-балтийский", "dead": true },
+  { "group": "dniepr", "name": "Голядский", "dead": true },
+
+  { "group": "slavic-east", "name": "Русский" },
+  { "group": "slavic-east", "name": "Белорусский" },
+  { "group": "slavic-east", "name": "Украинский" },
+  { "group": "slavic-south-east", "name": "Церковнославянский" },
+  { "group": "serbo-croatian", "name": "Сербский" },
+  { "group": "serbo-croatian", "name": "Хорватский" },
+  { "group": "slavic-south-west", "name": "Словенский" },
+
   { "group": "iranic", "name": "Киммерийский", "dead": true },
   { "group": "indo-european", "name": "Соротаптический", "dead": true },
 
