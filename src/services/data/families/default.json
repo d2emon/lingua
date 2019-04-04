@@ -318,67 +318,6 @@
   },
 
   {
-    "parent": "germanic-north",
-    "slug": "skandinavic-island",
-    "name": "Островная подгруппа"
-  },
-  {
-    "parent": "skandinavic-island",
-    "slug": "old-iceland",
-    "name": "Древнеисландский",
-    "dead": true
-  },
-  {
-    "parent": "germanic-north",
-    "slug": "skandinavic-continental",
-    "name": "Континентальная подгруппа"
-  },
-  {
-    "parent": "skandinavic-continental",
-    "slug": "skandinavic-west",
-    "name": "Западноскандинавские языки"
-  },
-  {
-    "parent": "skandinavic-west",
-    "slug": "old-danic",
-    "name": "Древнедатский",
-    "dead": true
-  },
-  {
-    "parent": "skandinavic-west",
-    "slug": "old-norvegian",
-    "name": "Древненорвежский",
-    "dead": true
-  },
-  {
-    "parent": "old-norvegian",
-    "slug": "norvegian",
-    "name": "Норвежский"
-  },
-  {
-    "parent": "skandinavic-continental",
-    "slug": "skandinavic-east",
-    "name": "Восточноскандинавские языки"
-  },
-  {
-    "parent": "skandinavic-east",
-    "slug": "old-sweden",
-    "name": "Древнешведский",
-    "dead": true
-  },
-  {
-    "parent": "old-sweden",
-    "slug": "sweden",
-    "name": "Шведский"
-  },
-  {
-    "parent": "skandinavic-east",
-    "slug": "old-gutnic",
-    "name": "Древнегутнийкий",
-    "dead": true
-  },
-
-  {
     "parent": "italic",
     "slug": "sabelic",
     "name": "Сабельская группа",

@@ -68,6 +68,49 @@
     "level": 8
   },
   {
+    "parent": "germanic-north",
+    "slug": "scandinavian-island",
+    "name": "Островная подгруппа",
+    "level": 9
+  },
+  {
+    "parent": "germanic-north",
+    "slug": "scandinavian-continental",
+    "name": "Континентальная подгруппа",
+    "level": 9
+  },
+  {
+    "parent": "scandinavian-continental",
+    "slug": "scandinavian-west",
+    "name": "Западноскандинавские языки"
+  },
+  {
+    "parent": "scandinavian-west",
+    "slug": "danish",
+    "name": "Датский"
+  },
+  {
+    "parent": "scandinavian-west",
+    "slug": "norwegian",
+    "name": "Норвежский"
+  },
+  {
+    "parent": "scandinavian-continental",
+    "slug": "scandinavian-east",
+    "name": "Восточноскандинавские языки"
+  },
+  {
+    "parent": "scandinavian-east",
+    "slug": "swedish",
+    "name": "Шведский"
+  },
+  {
+    "parent": "scandinavian-east",
+    "slug": "gutnish",
+    "name": "Гутнийкий"
+  },
+
+  {
     "parent": "germanic",
     "slug": "germanic-east",
     "name": "Восточногерманская группа",

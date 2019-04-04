@@ -1,33 +1,20 @@
-import db from './data';
+import families from './families';
 
+// const PAUSE_TIME = 1500;
+// const pause = ms => new Promise(resolve => setTimeout(resolve, ms));
 const logResponse = (method) => (data) => {
   console.log(method, data);
   return data;
 };
 
-
-export const fetchFamilies = () => db.getFamilies()
+export const fetchFamilies = () => families.byParent()
   .then(logResponse('fetchFamilies'));
 
-export const fetchFamily = familyId => db.getFamily(familyId)
+export const fetchFamily = familyId => families.withChildren(familyId)
   .then(logResponse('fetchFamily'));
 
-export const fetchSubgroups = item => db.getFamilies()
+export const fetchSubgroups = item => families.byParent()
   .then(logResponse('fetchSubgroups'))
-  .then((groups) => {
-    if (!item) return undefined;
-    return db.getFamily(item.slug);
-  })
+  .then(data => item && families.withChildren(item.slug))
   .then(logResponse('fetchSubgroups.Family'))
-  .then((family) => {
-    const result = [];
-    if (item.id === 7) result.push({
-      ...family,
-      children: undefined,
-    });
-    if (!family || !family.children) return [];
-    return [
-      ...result,
-      ...family.children,
-    ];
-  });
+  .then(family => family && family.children);
