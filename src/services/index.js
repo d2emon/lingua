@@ -3,7 +3,7 @@ import families from './families';
 // const PAUSE_TIME = 1500;
 // const pause = ms => new Promise(resolve => setTimeout(resolve, ms));
 const logResponse = (method) => (data) => {
-  console.log(method, data);
+  // console.log(method, data);
   return data;
 };
 

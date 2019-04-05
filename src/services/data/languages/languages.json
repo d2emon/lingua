@@ -11,6 +11,12 @@
 
   { "group": "nicobaric", "name": "Шомпенский язык" },
 
+  { "group": "kafiri-south", "name": "Кати (камката-вири)" },
+  { "group": "kafiri-south", "name": "Ашкун (ашкуну)" },
+  { "group": "kafiri-south", "name": "Вайгали (калаша-ала)" },
+  { "group": "kafiri-south", "name": "Трегами (гамбири)" },
+  { "group": "kafiri-north", "name": "Прасун (васи-вари)" },
+
   { "group": "hittite", "name": "Хеттский", "dead": true },
   { "group": "palaic", "name": "Палайский", "dead": true },
   { "group": "luwic", "name": "Карийский", "dead": true },

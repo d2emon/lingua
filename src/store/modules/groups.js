@@ -23,10 +23,6 @@ const actions = {
   fetchSubgroups: ({ commit }, item) => fetchSubgroups(item)
     .then(groups => commit('setSubgroups', { item, groups })),
   selectGroup: ({ dispatch, commit, state }, active) => fetchFamily(active)
-    .then(selected => {
-      console.log(active, selected);
-      return selected;
-    })
     .then(selected => (active
       ? selected
       : dispatch('fetchGroups')

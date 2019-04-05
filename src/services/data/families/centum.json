@@ -1,5 +1,9 @@
 [
-  { "parent": "indo-european", "slug": "centum", "name": "Кентум" },
+  {
+    "parent": "indo-european",
+    "slug": "centum",
+    "name": "Кентум"
+  },
   {
     "parent": "centum",
     "slug": "tocharian",

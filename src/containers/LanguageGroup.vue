@@ -37,13 +37,9 @@ export default {
     ]),
   },
   watch: {
-    // group: 'selectGroup',
-    group (value) {
-      console.log(value);
-      this.selectGroup(value);
-    }
+    group: 'selectGroup',
   },
-  mounted() { console.log('mounted', this.group); this.selectGroup(this.group); },
+  mounted() { this.selectGroup(this.group); },
 };
 </script>
 

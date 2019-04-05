@@ -1,5 +1,9 @@
 [
-  { "parent": "indo-european", "slug": "satem", "name": "Сатем" },
+  {
+    "parent": "indo-european",
+    "slug": "satem",
+    "name": "Сатем"
+  },
   {
     "parent": "satem",
     "slug": "paleo-balkan",

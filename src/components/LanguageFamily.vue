@@ -35,65 +35,58 @@
         </v-card>
       </v-flex>
       <v-flex xs9 v-if="family">
-        <v-container>
-          <v-layout
-            row
-            wrap
-          >
-            <v-flex xs12>
-              {{family.description}}
+        <v-card flat>
+          <v-container>
+            <v-card-text v-html="description" />
 
-              <v-divider></v-divider>
-
-              <v-expansion-panel
-                v-if="family.history && family.history.timeline"
-                v-model="timeline"
-                expand
+            <v-expansion-panel
+              v-if="family.history && family.history.timeline"
+              v-model="timeline"
+              expand
+            >
+              <v-expansion-panel-content
+                expand-icon="mdi-chevron-down"
               >
-                <v-expansion-panel-content
-                  expand-icon="mdi-chevron-down"
-                >
-                  <template v-slot:header>
-                    <div class="headline">{{family.history.timeline.title}}</div>
-                  </template>
+                <template v-slot:header>
+                  <div class="headline">{{family.history.timeline.title}}</div>
+                </template>
 
-                  <v-timeline>
-                    <v-timeline-item
-                      v-for="langMap in family.history.timeline.maps"
-                      :key="langMap.year"
+                <v-timeline>
+                  <v-timeline-item
+                    v-for="langMap in family.history.timeline.maps"
+                    :key="langMap.year"
+                  >
+                    <v-card
+                      :href="langMap.image"
                     >
-                      <v-card
-                        :href="langMap.image"
+                      <v-card-title
+                        v-if="langMap.title"
+                        v-text="langMap.title"
+                        class="title"
+                      />
+                      <v-card-title
+                        v-else
+                        class="title"
                       >
-                        <v-card-title
-                          v-if="langMap.title"
-                          v-text="langMap.title"
-                          class="title"
-                        />
-                        <v-card-title
-                          v-else
-                          class="title"
-                        >
-                          {{family.name}} {{langMap.year}}
-                        </v-card-title>
-                        <v-img
-                          v-if="langMap.image"
-                          :src="langMap.image"
-                        />
-                        <v-card-text
-                          v-if="langMap.text"
-                          v-text="langMap.text"
-                        />
-                      </v-card>
-                    </v-timeline-item>
-                  </v-timeline>
-                </v-expansion-panel-content>
-              </v-expansion-panel>
+                        {{family.name}} {{langMap.year}}
+                      </v-card-title>
+                      <v-img
+                        v-if="langMap.image"
+                        :src="langMap.image"
+                      />
+                      <v-card-text
+                        v-if="langMap.text"
+                        v-text="langMap.text"
+                      />
+                    </v-card>
+                  </v-timeline-item>
+                </v-timeline>
+              </v-expansion-panel-content>
+            </v-expansion-panel>
 
-              <v-card-text v-html="history" />
-            </v-flex>
-          </v-layout>
-        </v-container>
+            <v-card-text v-html="history" />
+          </v-container>
+        </v-card>
 
         <v-tabs
           v-model="active"
@@ -148,15 +141,6 @@ export default {
 Примечание: знаком † обозначена мёртвая языковая ветвь или мёртвый язык
 
 ### Арийская ветвь
-#### Нуристанская подветвь
-##### Нуристанская группа
-* Южно-кафирская подгруппа
-    * Кати (камката-вири)
-    * Ашкун (ашкуну)
-    * Вайгали (калаша-ала)
-    * Трегами (гамбири)
-* Северо-кафирская подгруппа
-    * Прасун (васи-вари)
 #### Индоиранская подветвь
 ##### Индоарийская группа
 
@@ -722,10 +706,15 @@ export default {
 
   }),
   computed: {
-    history() { return this.family.history ? converter.makeHtml(this.family.history.text) : null; },
+    history() {
+      return this.family.history ? converter.makeHtml(this.family.history.text) : null;
+    },
+    description() {
+      return this.family.description ? converter.makeHtml(this.family.description) : null;
+    },
   },
   methods: {
-    activate(items) { console.log(items); this.$emit('activate', items); },
+    activate(items) { this.$emit('activate', items); },
     load(item) { this.$emit('load', item); },
   }
 };

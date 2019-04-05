@@ -47,7 +47,7 @@ export default {
     active: 'activate',
   },
   methods: {
-    activate(items) { console.log(items); this.$emit('activate', items); },
+    activate(items) { this.$emit('activate', items); },
     load(item) { this.$emit('load', item); },
   },
 };

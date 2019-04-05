@@ -5,6 +5,7 @@ import satemFamilies from './satem.json';
 
 import taxons from './taxons.json';
 import history from './history';
+import descriptions from './descriptions';
 
 export default Promise.resolve(
   [].concat(
@@ -17,6 +18,7 @@ export default Promise.resolve(
     // name: item.name,
     children: [],
     history: history[family.slug],
+    description: descriptions[family.slug],
     taxon: taxons[family.level],
     link: `/group/${family.slug}`,
     ...family,
