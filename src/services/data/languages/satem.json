@@ -83,6 +83,7 @@
   { "group": "iranian-south-west", "name": "Хазарейский" },
   { "group": "iranian-south-west", "name": "Таджикский" },
   { "group": "iranian-south-west", "name": "Татский" },
+  { "group": "iranian", "name": "Киммерийский", "dead": true },
 
   { "group": "phrygian-armenian", "name": "Пеонийский", "dead": true },
   { "group": "phrygian-armenian", "name": "Фригийский", "dead": true },
@@ -116,5 +117,11 @@
   { "group": "hellenic", "name": "Понтийский" },
   { "group": "hellenic", "name": "Маниотский диалект" },
   { "group": "hellenic", "name": "Сфакиотский диалект" },
-  { "group": "hellenic", "name": "Химариотский диалект" }
+  { "group": "hellenic", "name": "Химариотский диалект" },
+
+  { "group": "daco-thracian", "name": "Дакский", "dead": true },
+  { "group": "daco-thracian", "name": "Фракийский", "dead": true },
+  { "group": "illyrian", "name": "Илилрийский", "dead": true },
+  { "group": "illyrian", "name": "Мессапский", "dead": true },
+  { "group": "illyrian", "name": "Албанский" }
 ]
