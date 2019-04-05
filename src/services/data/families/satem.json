@@ -153,6 +153,21 @@
     "level": 7
   },
   {
+    "parent": "nuristani-subbranch",
+    "slug": "nuristani",
+    "name": "Нуристанская группа"
+  },
+  {
+    "parent": "nuristani",
+    "slug": "kafiri-south",
+    "name": "Южно-кафирская подгруппа"
+  },
+  {
+    "parent": "nuristani",
+    "slug": "kafiri-north",
+    "name": "Северно-кафирская подгруппа"
+  },
+  {
     "parent": "indo-iranian",
     "slug": "indo-iranian-subbranch",
     "name": "Индоиранская подветвь",
@@ -219,21 +234,6 @@
     "level": 8
   },
 
-  {
-    "parent": "nuristan-subbranch",
-    "slug": "nuristan",
-    "name": "Нуристанская группа"
-  },
-  {
-    "parent": "nuristan",
-    "slug": "cafir-south",
-    "name": "Южно-кафирская подгруппа"
-  },
-  {
-    "parent": "nuristan",
-    "slug": "cafir-north",
-    "name": "Северно-кафирская подгруппа"
-  },
 
   {
     "parent": "indo-aryan-continental-central",
