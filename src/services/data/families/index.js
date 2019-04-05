@@ -18,6 +18,7 @@ export default Promise.resolve(
     children: [],
     history: history[family.slug],
     taxon: taxons[family.level],
+    link: `/group/${family.slug}`,
     ...family,
   })),
 );

@@ -5,6 +5,7 @@ export default Promise.resolve(
   defaultLanguages.map(language => ({
     language: true,
     taxon: taxons[language.level],
+    link: `/language/${language.slug}`,
     ...language,
   })),
 );

@@ -17,10 +17,10 @@ export default new Router({
         {
           path: 'groups',
           name: 'groups',
-          component: () => import('./views/Groups.vue'),
+          component: () => import('./views/Group.vue'),
         },
         {
-          path: 'groups/:group',
+          path: 'group/:group',
           name: 'groups',
           component: () => import('./views/Group.vue'),
         },

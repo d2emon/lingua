@@ -12,7 +12,7 @@ const state = {
 const getters = {};
 
 const mutations = {
-  selectGroup: (state, selected) => { state.selected = selected; },
+  setSelected: (state, selected) => { state.selected = selected; },
   setGroups: (state, groups) => { state.groups = groups; },
   setSubgroups: (state, { item, groups }) => { item.children = groups; },
 };
@@ -22,11 +22,18 @@ const actions = {
     .then(groups => commit('setGroups', groups)),
   fetchSubgroups: ({ commit }, item) => fetchSubgroups(item)
     .then(groups => commit('setSubgroups', { item, groups })),
-  selectGroup: ({ commit }, active) => fetchFamily(active)
-    .then(selected => commit('selectGroup', selected)),
-  selectGroups: ({ dispatch }, active) => dispatch('selectGroup', (!active.length)
-    ? null
-    : active[0]),
+  selectGroup: ({ dispatch, commit, state }, active) => fetchFamily(active)
+    .then(selected => {
+      console.log(active, selected);
+      return selected;
+    })
+    .then(selected => (active
+      ? selected
+      : dispatch('fetchGroups')
+        .then(() => ({ children: state.groups }))
+    ))
+    .then(selected => commit('setSelected', selected)),
+  selectGroups: ({ dispatch }, active) => active.length && dispatch('selectGroup', active[0]),
 };
 
 export default {

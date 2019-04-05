@@ -4,7 +4,7 @@
     flat
   >
     <v-card-title>
-      <h1 class="headline mb-2">{{ family.name }}</h1>
+      <h1 class="headline mb-2">{{ (family && family.name) || 'Языки' }}</h1>
     </v-card-title>
 
     <v-divider></v-divider>
@@ -15,11 +15,15 @@
       wrap
     >
       <v-flex xs3>
-        <children-list :children="family.children" />
+        <children-tree
+          :children="family.children"
+          @load="load"
+          @activate="activate"
+        />
 
         <v-divider></v-divider>
 
-        <v-card v-if="family.image">
+        <v-card v-if="family && family.image">
           <a :href="family.image">
             <v-img :src="family.image" />
           </a>
@@ -32,7 +36,7 @@
         <v-img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Indo-European-languages.gif" />
         <v-img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/120_World_Language.jpg" />
       </v-flex>
-      <v-flex xs9>
+      <v-flex xs9 v-if="family">
         <v-layout
           row
           wrap
@@ -117,93 +121,6 @@
         </v-tabs>
       </v-flex>
     </v-layout>
-
-    <v-divider></v-divider>
-
-    <v-card>
-      <v-card-title>Пример распределения таксонов по уровням</v-card-title>
-      <v-container>
-        <v-layout row wrap>
-          <v-flex xs2>макросемья, фила</v-flex>
-          <v-flex xs10>ностратическая макросемья</v-flex>
-        </v-layout>
-        <v-layout row wrap>
-          <v-flex xs2>семья</v-flex>
-          <v-flex xs10>индоевропейская</v-flex>
-        </v-layout>
-        <v-layout row wrap>
-          <v-flex xs2>подсемья</v-flex>
-          <v-flex xs10>«европейская»</v-flex>
-        </v-layout>
-        <v-layout row wrap>
-          <v-flex xs2>надветвь</v-flex>
-          <v-flex xs10>&nbsp;</v-flex>
-        </v-layout>
-        <v-layout row wrap>
-          <v-flex xs2>зона</v-flex>
-          <v-flex xs10>&nbsp;</v-flex>
-        </v-layout>
-        <v-layout row wrap>
-          <v-flex xs2>подзона</v-flex>
-          <v-flex xs10>&nbsp;</v-flex>
-        </v-layout>
-        <v-layout row wrap>
-          <v-flex xs2>ветвь</v-flex>
-          <v-flex xs10>балто-славянская</v-flex>
-        </v-layout>
-        <v-layout row wrap>
-          <v-flex xs2>подветвь</v-flex>
-          <v-flex xs10>&nbsp;</v-flex>
-        </v-layout>
-        <v-layout row wrap>
-          <v-flex xs2>группа</v-flex>
-          <v-flex xs10>славянская</v-flex>
-        </v-layout>
-        <v-layout row wrap>
-          <v-flex xs2>подгруппа</v-flex>
-          <v-flex xs10>восточнославянская</v-flex>
-        </v-layout>
-        <v-layout row wrap>
-          <v-flex xs2>подподгруппа</v-flex>
-          <v-flex xs10>&nbsp;</v-flex>
-        </v-layout>
-        <v-layout row wrap>
-          <v-flex xs2>микрогруппа</v-flex>
-          <v-flex xs10>&nbsp;</v-flex>
-        </v-layout>
-        <hr />
-        <v-layout row wrap>
-          <v-flex xs2>
-            <ul>
-              <li>язык</li>
-              <li>кластер</li>
-            </ul>
-          </v-flex>
-          <v-flex xs8>русско-белорусский кластер</v-flex>
-          <v-flex xs2>1 уровень [89-95% совпадений между составляющими]</v-flex>
-        </v-layout>
-        <v-layout row wrap>
-          <v-flex xs2>
-            <ul>
-              <li>наречие</li>
-              <li>язык</li>
-            </ul>
-          </v-flex>
-          <v-flex xs8>южнорусское наречие</v-flex>
-          <v-flex xs2>2 уровень [95-99%]</v-flex>
-        </v-layout>
-        <v-layout row wrap>
-          <v-flex xs2>диалект</v-flex>
-          <v-flex xs8>московская группа говоров</v-flex>
-          <v-flex xs2>3 уровень [99-100%]</v-flex>
-        </v-layout>
-        <v-layout row wrap>
-          <v-flex xs2>говор</v-flex>
-          <v-flex xs8>московский городской</v-flex>
-          <v-flex xs2>4 уровень</v-flex>
-        </v-layout>
-      </v-container>
-    </v-card>
   </v-card>
 </template>
 
@@ -215,7 +132,7 @@ const converter = new showdown.Converter();
 export default {
   name: 'LanguageFamily',
   components: {
-    ChildrenList: () => import('@/components/Language/ChildrenList.vue'),
+    ChildrenTree: () => import('@/components/Language/ChildrenTree.vue'),
     LanguageSummary: () => import('@/components/LanguageSummary.vue'),
   },
   props: [
@@ -810,6 +727,10 @@ export default {
   computed: {
     history() { return this.family.history ? converter.makeHtml(this.family.history.text) : null; },
   },
+  methods: {
+    activate(items) { console.log(items); this.$emit('activate', items); },
+    load(item) { this.$emit('load', item); },
+  }
 };
 </script>
 

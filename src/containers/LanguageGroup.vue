@@ -4,6 +4,8 @@
       <v-scroll-y-transition mode="out-in">
         <language-family
           :family="selected"
+          @activate="selectGroups"
+          @load="fetchSubgroups"
         />
       </v-scroll-y-transition>
     </v-flex>
@@ -28,12 +30,20 @@ export default {
     ...mapState('groups', ['selected']),
   },
   methods: {
-    ...mapActions('groups', ['selectGroup']),
+    ...mapActions('groups', [
+      'selectGroup',
+      'selectGroups',
+      'fetchSubgroups',
+    ]),
   },
   watch: {
-    group: 'selectGroup',
+    // group: 'selectGroup',
+    group (value) {
+      console.log(value);
+      this.selectGroup(value);
+    }
   },
-  mounted() { this.selectGroup(this.group); },
+  mounted() { console.log('mounted', this.group); this.selectGroup(this.group); },
 };
 </script>
 
