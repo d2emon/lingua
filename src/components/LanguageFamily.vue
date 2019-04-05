@@ -15,89 +15,85 @@
       wrap
     >
       <v-flex xs3>
-        <children-tree
-          :children="family.children"
-          @load="load"
-          @activate="activate"
-        />
+        <v-card>
+          <language-summary :family="family" />
 
-        <v-divider></v-divider>
+          <v-divider></v-divider>
 
-        <v-card v-if="family && family.image">
-          <a :href="family.image">
-            <v-img :src="family.image" />
-          </a>
+          <children-tree
+            :children="family.children"
+            @load="load"
+            @activate="activate"
+          />
 
-          Слева — кентумные языки, справа — сатемные. Красным отмечены мёртвые языки.
+          <v-divider></v-divider>
+
+          <images-box
+            v-if="family.images"
+            :images="family.images"
+          />
         </v-card>
-
-        <v-divider></v-divider>
-
-        <v-img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Indo-European-languages.gif" />
-        <v-img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/120_World_Language.jpg" />
       </v-flex>
       <v-flex xs9 v-if="family">
-        <v-layout
-          row
-          wrap
-        >
-          <v-flex xs8>
-            {{family.description}}
-          </v-flex>
+        <v-container>
+          <v-layout
+            row
+            wrap
+          >
+            <v-flex xs12>
+              {{family.description}}
 
-          <v-flex xs4>
-            <language-summary :family="family" />
-          </v-flex>
+              <v-divider></v-divider>
 
-          <v-flex xs12>
-            <v-expansion-panel
-              v-if="family.history && family.history.timeline"
-              v-model="timeline"
-              expand
-            >
-              <v-expansion-panel-content
-                expand-icon="mdi-chevron-down"
+              <v-expansion-panel
+                v-if="family.history && family.history.timeline"
+                v-model="timeline"
+                expand
               >
-                <template v-slot:header>
-                  <div class="headline">{{family.history.timeline.title}}</div>
-                </template>
+                <v-expansion-panel-content
+                  expand-icon="mdi-chevron-down"
+                >
+                  <template v-slot:header>
+                    <div class="headline">{{family.history.timeline.title}}</div>
+                  </template>
 
-                <v-timeline>
-                  <v-timeline-item
-                    v-for="langMap in family.history.timeline.maps"
-                    :key="langMap.year"
-                  >
-                    <v-card
-                      :href="langMap.image"
+                  <v-timeline>
+                    <v-timeline-item
+                      v-for="langMap in family.history.timeline.maps"
+                      :key="langMap.year"
                     >
-                      <v-card-title
-                        v-if="langMap.title"
-                        v-text="langMap.title"
-                        class="title"
-                      />
-                      <v-card-title
-                        v-else
-                        class="title"
+                      <v-card
+                        :href="langMap.image"
                       >
-                        {{family.name}} {{langMap.year}}
-                      </v-card-title>
-                      <v-img
-                        v-if="langMap.image"
-                        :src="langMap.image"
-                      />
-                      <v-card-text
-                        v-if="langMap.text"
-                        v-text="langMap.text"
-                      />
-                    </v-card>
-                  </v-timeline-item>
-                </v-timeline>
-              </v-expansion-panel-content>
-            </v-expansion-panel>
+                        <v-card-title
+                          v-if="langMap.title"
+                          v-text="langMap.title"
+                          class="title"
+                        />
+                        <v-card-title
+                          v-else
+                          class="title"
+                        >
+                          {{family.name}} {{langMap.year}}
+                        </v-card-title>
+                        <v-img
+                          v-if="langMap.image"
+                          :src="langMap.image"
+                        />
+                        <v-card-text
+                          v-if="langMap.text"
+                          v-text="langMap.text"
+                        />
+                      </v-card>
+                    </v-timeline-item>
+                  </v-timeline>
+                </v-expansion-panel-content>
+              </v-expansion-panel>
 
-            <v-card-text v-html="history" />
-          </v-flex>
-        </v-layout>
+              <v-card-text v-html="history" />
+            </v-flex>
+          </v-layout>
+        </v-container>
 
         <v-tabs
           v-model="active"
@@ -133,6 +129,7 @@ export default {
   name: 'LanguageFamily',
   components: {
     ChildrenTree: () => import('@/components/Language/ChildrenTree.vue'),
+    ImagesBox: () => import('@/components/Language/ImagesBox.vue'),
     LanguageSummary: () => import('@/components/LanguageSummary.vue'),
   },
   props: [
@@ -735,5 +732,10 @@ export default {
 </script>
 
 <style scoped>
+.group-image {
+  height: 500px;
+  min-height: 500px;
+  max-height: 500px;
+}
 
 </style>

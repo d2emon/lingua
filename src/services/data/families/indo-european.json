@@ -6,7 +6,18 @@
     "description": "Индоевропейские языки — самая распространённая в мире языковая семья. Представлена на всех обитаемых континентах Земли, число носителей превышает 2,5 млрд. Согласно воззрениям некоторых современных языковедов, является частью макросемьи ностратических языков.",
     "areal": "весь мир",
     "speakers": "2,7 млрд",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/IndoEuropeanTree_ru.svg",
+    "images": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/2a/IndoEuropeanTree_ru.svg",
+        "text": "Слева — кентумные языки, справа — сатемные. Красным отмечены мёртвые языки."
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Indo-European-languages.gif"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f1/120_World_Language.jpg"
+      }
+    ],
     "age": "V — VI тыс. лет назад",
     "languagesCount": 449,
     "level": 1
