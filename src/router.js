@@ -21,7 +21,7 @@ export default new Router({
         },
         {
           path: 'group/:group',
-          name: 'groups',
+          name: 'group',
           component: () => import('./views/Group.vue'),
         },
         {

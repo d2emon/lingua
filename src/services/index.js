@@ -1,20 +1,20 @@
-import families from './families';
+import axios from 'axios';
 
-// const PAUSE_TIME = 1500;
-// const pause = ms => new Promise(resolve => setTimeout(resolve, ms));
-const logResponse = (method) => (data) => {
-  // console.log(method, data);
-  return data;
-};
+const baseUrl = '//127.0.0.1:4000/languages';
+const Axios = axios.create({
+  baseUrl,
+});
 
-export const fetchFamilies = () => families.byParent()
-  .then(logResponse('fetchFamilies'));
+const getGroups = ({ data }) => Promise.resolve(data.groups);
 
-export const fetchFamily = familyId => families.withChildren(familyId)
-  .then(logResponse('fetchFamily'));
+export const fetchFamilies = () => Axios
+  .get(`${baseUrl}/groups`)
+  .then(getGroups);
 
-export const fetchSubgroups = item => families.byParent()
-  .then(logResponse('fetchSubgroups'))
-  .then(data => item && families.withChildren(item.slug))
-  .then(logResponse('fetchSubgroups.Family'))
-  .then(family => family && family.children);
+export const fetchFamily = (groupId) => Axios
+  .get(`${baseUrl}/subgroups/${groupId || ''}`)
+  .then(getGroups);
+
+export const fetchSubgroups = (item) => item && Axios
+  .get(`${baseUrl}/group/${item.slug}`)
+  .then(getGroups);
