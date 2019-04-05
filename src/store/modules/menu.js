@@ -2,61 +2,48 @@ const state = {
   title: 'Языки',
   subtitle: 'Полезно иногда знать иностранные языки.',
   pages: [
-    {
-      title: 'Главная',
-      icon: 'mdi-home',
-      to: '/',
-    },
-    {
-      title: 'Группы',
-      icon: 'mdi-file-tree',
-      to: '/groups',
-    },
-    {
-      title: 'О нас',
-      icon: 'mdi-folder',
-      to: '/about',
-    },
-    {
-      title: 'Индоевропейские языки',
-      icon: 'mdi-folder',
-      to: '/languages',
-    },
+    { title: 'Главная', icon: 'mdi-home', to: '/' },
+    { title: 'Группы', icon: 'mdi-file-tree', to: '/groups', menu: true },
+    { title: 'Индоевропейские языки', icon: 'mdi-folder', to: '/group/indo-european' },
     {
       title: 'Искусственные',
       icon: 'mdi-folder',
       to: '/conlangs',
+      menu: true,
     },
     {
-      title: 'Красота не спасет мир',
+      title: 'Фразеологизмы',
+      // title: 'Красота не спасет мир',
       icon: 'mdi-folder',
       to: '/phraseology',
+      menu: true,
     },
     {
       title: 'Ложные друзья переводчика',
       icon: 'mdi-folder',
       to: '/translate',
+      menu: true,
     },
     {
       title: 'Машинный перевод',
       icon: 'mdi-folder',
       to: '/machine-translate',
+      menu: true,
     },
-    {
-      title: 'Русский язык',
-      icon: 'mdi-folder',
-      to: '/russian',
-    },
+    { title: 'Русский язык', icon: 'mdi-folder', to: '/russian' },
     {
       title: 'На разных языках',
       icon: 'mdi-folder',
       to: '/translations',
+      menu: true,
     },
     {
       title: 'Сленг',
       icon: 'mdi-folder',
       to: '/idioms',
+      menu: true,
     },
+    { title: 'О нас', icon: 'mdi-folder', to: '/about', menu: true },
   ],
   items: [
     {
@@ -101,18 +88,6 @@ const state = {
   // ----
   // articles: require('@/data/articles.json'),
   drawer: false,
-  /*
-  items: [
-    {
-      text: 'Home',
-      to: '/'
-    },
-    {
-      text: 'About',
-      href: '#about'
-    }
-  ]
-  */
 };
 
 const getters = {
@@ -137,8 +112,7 @@ const getters = {
     return categories.sort().slice(0, 4)
   },
   */
-  // links: (state, getters) => state.items.concat(getters.categories),
-  links: state => state.pages,
+  links: state => state.pages.filter(page => page.menu),
 };
 
 const mutations = {

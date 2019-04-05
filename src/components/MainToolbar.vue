@@ -14,16 +14,17 @@
       py-0
     >
       <v-layout>
-        <v-img
-          :src="require('@/assets/logo.png')"
-          class="mr-5"
-          contain
-          height="48"
-          width="48"
-          max-width="48"
-          @click="$vuetify.goTo(0)"
-        />
-        <v-toolbar-title>{{title}}</v-toolbar-title>
+        <router-link to="/">
+          <v-img
+            :src="require('@/assets/logo.png')"
+            class="mr-5"
+            contain
+            height="48"
+            width="48"
+            max-width="48"
+          />
+        </router-link>
+        <!-- v-toolbar-title>{{title}}</v-toolbar-title -->
         <v-btn
           v-for="(link, i) in links"
           :key="i"
@@ -33,12 +34,6 @@
           @click="onClick($event, link)"
         >
           {{link.title}}
-        </v-btn>
-        <v-btn icon>
-          <v-icon>mdi-magnify</v-icon>
-        </v-btn>
-        <v-btn icon>
-          <v-icon>mdi-view-module</v-icon>
         </v-btn>
         <v-spacer></v-spacer>
         <v-text-field

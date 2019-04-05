@@ -3,15 +3,7 @@
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
         <v-toolbar color="light-blue" dark>
-          <v-toolbar-side-icon><v-icon>mdi-menu</v-icon></v-toolbar-side-icon>
           <v-toolbar-title>{{title}}</v-toolbar-title>
-          <v-spacer></v-spacer>
-          <v-btn icon>
-            <v-icon>mdi-magnify</v-icon>
-          </v-btn>
-          <v-btn icon>
-            <v-icon>mdi-view-module</v-icon>
-          </v-btn>
         </v-toolbar>
         <v-list two-line subheader>
           <v-subheader inset>{{subtitle}}</v-subheader>
