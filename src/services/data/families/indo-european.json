@@ -8,10 +8,11 @@
     "speakers": "2,7 млрд",
     "images": [
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/2/2a/IndoEuropeanTree_ru.svg",
-        "text": "Слева — кентумные языки, справа — сатемные. Красным отмечены мёртвые языки."
+        "text": "Слева — кентумные языки, справа — сатемные. Красным отмечены мёртвые языки.",
+        "src": "https://upload.wikimedia.org/wikipedia/commons/2/2a/IndoEuropeanTree_ru.svg"
       },
       {
+        "text": "Распространение индоевропейских языков по Европе.",
         "src": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Indo-European-languages.gif"
       },
       {

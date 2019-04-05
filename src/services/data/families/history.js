@@ -116,93 +116,84 @@ export default {
 гипотез, опирающихся в первую очередь на антропологические критерии при 
 этнолингвистической атрибуции археологических культур.
 
-----
+## Хронология
 
-Using a mathematical analysis borrowed from evolutionary biology, Don Ringe 
-and Tandy Warnow propose the following evolutionary tree of Indo-European 
-branches:
-
-* ...
-* XLV BC - XLI BC
-    * Pre-Anatolian (4200 BC) [David Anthony]
-* XL BC - XXXVI BC
-    * Pre-Tocharian (3700 BC) [David Anthony]
-* XXXV BC - XXXI BC
-    * Pre-Germanic (3300 BC) [David Anthony]
-* XXX BC - XXVI BC
-    * Pre-Italic and Pre-Celtic (3000 BC) [David Anthony]
-    * Pre-Armenian (2800 BC) [David Anthony]
-    * Pre-Balto-Slavic (2800 BC) [David Anthony]
-* XXV BC - XXI BC
-    * Pre-Greek (2500 BC) [David Anthony]
-    * Proto-Indo-Iranian (2200 BC) [David Anthony]
-* XX BC - XVI BC
-    * Split between Iranian and Old Indic 1800 BC [David Anthony]
-* XV BC - XI BC
-    * The Nordic Bronze Age 
-        * Develops pre-Proto-Germanic, and the (pre)-Proto-Celtic Urnfield and 
-          Hallstatt cultures emerge in Central Europe, introducing the Iron 
-          Age.
-        * Migration of the Proto-Italic speakers into the Italian peninsula 
-          (Bagnolo stele).
-        * Redaction of the Rigveda and rise of the Vedic civilization in the 
-          Punjab.
-        * The Mycenaean civilization gives way to the Greek Dark Ages.
-        * Hittite goes extinct.
-* X BC - VI BC
-    * The Celtic languages spread over Central and Western Europe.
-    * Baltic languages are spoken in a huge area from present-day Poland to 
-      the Ural Mountains.
-    * Proto Germanic.
-    * Homer and the beginning of Classical Antiquity.
-    * The Vedic Civilization gives way to the Mahajanapadas.
-    * Siddhartha Gautama preaches Buddhism.
-    * Zoroaster composes the Gathas, rise of the Achaemenid Empire, replacing 
-      the Elamites and Babylonia. 
-    * Separation of Proto-Italic into Osco-Umbrian and Latin-Faliscan.
-    * Genesis of the Greek and Old Italic alphabets.
-    * A variety of Paleo-Balkan languages are spoken in Southern Europe.
-* V BC - I BC
-    * Classical Antiquity: 
-        * Spread of Greek and Latin throughout the Mediterranean and, during 
-          the Hellenistic period (Indo-Greeks), to Central Asia and the 
-          Hindukush.
-        * Kushan Empire, Mauryan Empire.
-        * Proto-Germanic.
+* XLV - XLI до н.э.
+    * Доанатолийские (4200 до н.э.) [David Anthony]
+* XL - XXXVI до н.э.
+    * Дотохарские (3700 д.н.э.) [David Anthony]
+* XXXV - XXXI до н.э.
+    * Догерманские (3300 до н.э.) [David Anthony]
+* XXX - XXVI до н.э.
+    * Доиталийские и докельтские (3000 до н.э.) [David Anthony]
+    * Доармянские (2800 до н.э..) [David Anthony]
+    * Добалтославянские (2800 до н.э.) [David Anthony]
+* XXV - XXI до н.э.
+    * Догреческие (2500 до н.э.) [David Anthony]
+    * Доиндоиранские (2200 до н.э.) [David Anthony]
+* XX - XVI  до н.э.
+    * Разделение на инранские и древнеиндийские 1800 до н.э. [David Anthony]
+* XV - XI до н.э.
+    * Северный Бронзовый Век: 
+        * Развитие допротогерманской и допротокельтской культуры урн и
+          Гальштата начинает Железный Век в Центральной Европе.
+        * Миграция носителий протоиталийского языка на итальянский полуостров.
+        * Появление Ригведы и подъем Ведической цивилизации в Пенджабе.
+        * Микенская цивилизация уступает место греческим темным векам.
+        * Вымирание хеттского языка.
+* X - VI до н.э.
+    * Распространение кельтских языков по Центральной и Западной Европе.
+    * На балтийских языках говорят на огромной территории от современной 
+      Польши до Урала.
+    * Протогерманский.
+    * Гомер и начало Классической античности.
+    * Ведическая цивилизация уступает место Махаджанападам.
+    * Сиддхартха Гаутама основывает буддизм.
+    * Зороастр составляет Гаты, возвышение Империи Ахаменидов, сменившей 
+      Эламитов и Вавилонию. 
+    * Разделение протоиталийского на окско-умбрийские и латино-фалисские 
+      языки.
+    * Возникновение греческого и древнеитальянского алфавитов.
+    * В Южной Европе говорят на множестве палеобалдканских языков.
+* V - I до н.э.
+    * Классическая античность: 
+        * Распространение греческого и латыни по всему Средиземноморью, а в
+          эллинистический период и в Среднюю Азию и Гиндукуш.
+        * Империя Кушан, Империя Маурьев.
+        * Протогерманский.
 * I - V
-    * Late Antiquity: 
-        * Gupta period; attestation of Armenian.
-        * Proto-Slavic.
-        * The Roman Empire and then the Migration period marginalize the 
-          Celtic languages to the British Isles.
-        * Sogdian, an Eastern Iranian language, becomes the lingua franca of 
-          the Silk Road in Central Asia leading to China, due to the 
-          proliferation of Sogdian merchants there.
-        * The last of the Anatolian languages are extinct.
+    * Поздняя античность: 
+        * Период Гупта; установление Армянского.
+        * Протославянский.
+        * Римская империя, а затем период миграции сокращает распространение
+          кельтских языков до Британских островов.
+        * Благодаря распространению согдианских торговцев восточноиранский
+          согдианский язык становится лингва франка для Шелкового Пути,
+          ведущего через Центральную Азию в Китай.
+        * Вымирание последних анатолийских языков.
 * VI - X
-    * Early Middle Ages: 
-        * The Viking Age forms an Old Norse koine spanning Scandinavia, the 
-          British Isles and Iceland.
-        * The Islamic conquest and the Turkic expansion results in the 
-          Arabization and Turkification of significant areas where 
-          Indo-European languages were spoken. 
-        * Tocharian is extinct in the course of the Turkic expansion while 
-          Northeastern Iranian (Scytho-Sarmatian) is reduced to small refugia. 
-        * Slavic languages spread over wide areas in central, eastern and 
-          southeastern Europe, largely replacing Romance in the Balkans (with 
-          the exception of Romanian) and whatever was left of the paleo-Balkan 
-          languages with the exception of Albanian.
+    * Раннее средневековье: 
+        * Эпоха викингов образует древнескандинавский койн, охватывающий 
+          Скандинавию, Британские острова и Исландию.
+        * Исламское завоевание и тюркская экспансия приводят к арабизации и
+          тюркизации обширных районов, где говорили на индоевропейских языках.
+        * Тохарский язык вымирает в ходе тюркской экспансии, а северовосточный
+          иранский (скифо-сарматский) остается лишь на небольшом пространстве. 
+        * Славянские языки распространяются по обширным территориям в 
+          Центральной, Восточной и Юго-восточной Европе, в значительной мере
+          вытеснив романские языки на Балканах (за исключением Румынского) и
+          остатки палеобалканских языков, за исключением албанского.
 * XI - XV
-    * Late Middle Ages: 
-        * Attestation of Albanian and Baltic.
+    * Позднее средневековье: 
+        * Установление албанского и балтийских языков.
 * XVI - XXI
-    * Early Modern period to present: 
-        * Colonialism results in the spread of Indo-European languages to 
-          every continent, most notably Romance (North, Central and South 
-          America, North and Sub-Saharan Africa, West Asia), West Germanic 
-          (English in North America, Sub-Saharan Africa, East Asia and 
-          Australia; to a lesser extent Dutch and German), and Russian to 
-          Central Asia and North Asia.
+    * Начало нового времени и современность: 
+        * Колониализм приводит к распространению индоевропейских языков на все
+          континенты, в частности романских (Северная, Центральная и Южная
+          Америка, Северная Африка, Сахара и Западная Азия), 
+          западно-германских (английского в Северной Америке, Сахаре,
+          Восточной Азии и Австралии; в меньшей степени голландского и
+          немецкого), и русского в Центральной и Северной Азии.
     `,
   },
 };
