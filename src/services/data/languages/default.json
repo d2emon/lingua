@@ -36,10 +36,6 @@
   { "group": "illyrian", "name": "Илилрийский", "dead": true },
   { "group": "illyrian", "name": "Мессапский", "dead": true },
   { "group": "illyrian", "name": "Албанский" },
-  { "group": "hellenic", "name": "Древнемакедонский", "dead": true },
-  { "group": "phrygian-armenian", "name": "Пеонийский", "dead": true },
-  { "group": "phrygian-armenian", "name": "Фригийский", "dead": true },
-  { "group": "armenian-group", "name": "Армянский" },
 
   { "group": "anglo-frisian", "name": "Франкский", "dead": true },
   { "group": "anglic", "name": "Английский" },
