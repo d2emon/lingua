@@ -1,8 +1,14 @@
-import defaultLanguages from './languages.json';
+import defaultLanguages from './default.json';
+import satemLanguages from "./satem.json";
+
 import taxons from './taxons.json';
 
 export default Promise.resolve(
-  defaultLanguages.map(language => ({
+  [].concat(
+    defaultLanguages,
+    // centumLanguages,
+    satemLanguages,
+  ).map(language => ({
     language: true,
     taxon: taxons[language.level],
     link: `/language/${language.slug}`,

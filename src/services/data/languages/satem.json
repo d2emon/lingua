@@ -1,0 +1,44 @@
+[
+  { "group": "kafiri-south", "name": "Кати (камката-вири)" },
+  { "group": "kafiri-south", "name": "Ашкун (ашкуну)" },
+  { "group": "kafiri-south", "name": "Вайгали (калаша-ала)" },
+  { "group": "kafiri-south", "name": "Трегами (гамбири)" },
+  { "group": "kafiri-north", "name": "Прасун (васи-вари)" },
+
+  { "group": "indo-aryan-island", "name": "Сингальский" },
+  { "group": "indo-aryan-island", "name": "Мальдивский" },
+
+  { "group": "hindustani", "name": "Фиджийский хинди" },
+  { "group": "hindi-west", "name": "Брадж" },
+  { "group": "hindi-west", "name": "Бундели" },
+  { "group": "hindi-east", "name": "Авадхи" },
+  { "group": "hindi-east", "name": "Багхели" },
+  { "group": "hindi-east", "name": "Чхаттисгархи" },
+
+  { "group": "indo-aryan-continental-central", "name": "Урду" },
+
+  { "group": "indo-aryan-continental-east", "name": "Ассамский" },
+  { "group": "indo-aryan-continental-east", "name": "Бенгальский язык" },
+  { "group": "indo-aryan-continental-east", "name": "Бишнуприя-манипури" },
+  { "group": "indo-aryan-continental-east", "name": "Ория (язык)" },
+  { "group": "biharian", "name": "Ангика" },
+  { "group": "biharian", "name": "Бходжпури" },
+  { "group": "biharian", "name": "Магахи" },
+  { "group": "biharian", "name": "Майтхили" },
+  { "group": "biharian", "name": "Суринамский хиндустани" },
+
+  { "group": "indo-aryan-continental-north-west", "name": "Панджаби" },
+  { "group": "lahnda", "name": "Хиндко" },
+  { "group": "lahnda", "name": "Джакати" },
+  { "group": "lahnda", "name": "Кхетрани" },
+  { "group": "lahnda", "name": "Пахари-потвари" },
+  { "group": "lahnda", "name": "Мирпурский панджаби" },
+  { "group": "lahnda", "name": "Западный панджаби" },
+  { "group": "lahnda", "name": "Сирайки" },
+  { "group": "indo-aryan-continental-north-west", "name": "Гуджарати" },
+  { "group": "indo-aryan-continental-north-west", "name": "Черманский" },
+  { "group": "indo-aryan-continental-north-west", "name": "Гуджури" },
+  { "group": "indo-aryan-continental-north-west", "name": "Догри" },
+  { "group": "indo-aryan-continental-north-west", "name": "Цыганский" }
+
+]
