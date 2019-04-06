@@ -40,7 +40,7 @@ const state = {
     {
       title: 'Сленг',
       icon: 'mdi-folder',
-      to: '/idioms',
+      to: '/slangs',
       menu: true,
     },
     { title: 'О нас', icon: 'mdi-folder', to: '/about', menu: true },

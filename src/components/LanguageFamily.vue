@@ -123,7 +123,7 @@ export default {
   components: {
     ChildrenTree: () => import('@/components/Language/ChildrenTree.vue'),
     ImagesBox: () => import('@/components/Language/ImagesBox.vue'),
-    LanguageSummary: () => import('@/components/LanguageSummary.vue'),
+    LanguageSummary: () => import('@/components/Language/LanguageSummary.vue'),
   },
   props: [
     'family',
