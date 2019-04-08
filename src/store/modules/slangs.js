@@ -19,7 +19,7 @@ const mutations = {
 const actions = {
   fetchSlangs: ({ commit }) => fetchSlangs()
     .then(slangs => commit('setSlangs', slangs)),
-  selectSlang: ({ state, commit }, slangId) => fetchSlang(slangId)
+  selectSlang: ({ commit }, slangId) => fetchSlang(slangId)
     .then(slang => commit('setSlang', slang)),
 };
 
