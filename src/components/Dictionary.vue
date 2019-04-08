@@ -21,14 +21,19 @@
 
     <dl v-if="dictionary.items">
       <template
-        v-for="(item, key) in dictionary.items"
+        v-for="(item, itemId) in dictionary.items"
       >
-        <dt :key="`word-${key}`">{{item.word}}</dt>
+        <dt :key="`word-${itemId}`">{{item.word}}</dt>
         <dd
-          :key="`definition-${key}`"
-          v-if="item.definition"
+          :key="`definition-${itemId}`"
         >
           {{item.definition}}
+          <dl v-if="item.subitems">
+            <template v-for="(subitem, subitemId) in item.subitems">
+              <dt :key="`word-${itemId}-${subitemId}`">{{subitem.word}}</dt>
+              <dd :key="`definition-${itemId}-${subitemId}`">{{subitem.definition}}</dd>
+            </template>
+          </dl>
         </dd>
       </template>
     </dl>
@@ -47,7 +52,7 @@ export default {
 
 <style scoped>
   dl {
-    padding: 0;
+    /* padding: 0; */
   }
   dl dt {
     font-size: 1em;

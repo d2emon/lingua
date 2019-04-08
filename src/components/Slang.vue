@@ -11,7 +11,7 @@
         row
         wrap
       >
-        <v-flex xs6>
+        <v-flex v-if="slang.text" xs6>
           <v-card-text v-html="slang.text" />
 
           <v-card-text v-html="slang.appendix" />
