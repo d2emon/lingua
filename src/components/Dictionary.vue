@@ -19,14 +19,19 @@
       </a>
     </v-subheader>
 
-    <ul v-if="dictionary.items">
-      <li
+    <dl v-if="dictionary.items">
+      <template
         v-for="(item, key) in dictionary.items"
-        :key="key"
       >
-        {{item}}
-      </li>
-    </ul>
+        <dt :key="`word-${key}`">{{item.word}}</dt>
+        <dd
+          :key="`definition-${key}`"
+          v-if="item.definition"
+        >
+          {{item.definition}}
+        </dd>
+      </template>
+    </dl>
   </v-card>
 
 </template>
@@ -41,5 +46,18 @@ export default {
 </script>
 
 <style scoped>
-
+  dl {
+    padding: 0;
+  }
+  dl dt {
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 16px;
+    padding: 0;
+  }
+  dl dd {
+    margin-bottom: 16px;
+    padding: 0 16px;
+  }
 </style>
