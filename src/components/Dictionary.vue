@@ -19,26 +19,27 @@
       </a>
     </v-subheader>
 
-    <dl v-if="dictionary.items">
-      <template
-        v-for="(item, itemId) in dictionary.items"
-      >
-        <dt :key="`word-${itemId}`">{{item.word}}</dt>
-        <dd
-          :key="`definition-${itemId}`"
+    <v-container>
+      <dl v-if="dictionary.items">
+        <template
+          v-for="(item, itemId) in dictionary.items"
         >
-          {{item.definition}}
-          <dl v-if="item.subitems">
-            <template v-for="(subitem, subitemId) in item.subitems">
-              <dt :key="`word-${itemId}-${subitemId}`">{{subitem.word}}</dt>
-              <dd :key="`definition-${itemId}-${subitemId}`">{{subitem.definition}}</dd>
-            </template>
-          </dl>
-        </dd>
-      </template>
-    </dl>
+          <dt :key="`word-${itemId}`">{{item.word}}</dt>
+          <dd
+            :key="`definition-${itemId}`"
+          >
+            {{item.definition}}
+            <dl v-if="item.subitems">
+              <template v-for="(subitem, subitemId) in item.subitems">
+                <dt :key="`word-${itemId}-${subitemId}`">{{subitem.word}}</dt>
+                <dd :key="`definition-${itemId}-${subitemId}`">{{subitem.definition}}</dd>
+              </template>
+            </dl>
+          </dd>
+        </template>
+      </dl>
+    </v-container>
   </v-card>
-
 </template>
 
 <script>
