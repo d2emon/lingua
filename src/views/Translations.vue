@@ -1,16 +1,22 @@
 <template>
-  <v-layout row>
+  <div
+    id="languages"
+    row
+  >
     <v-flex xs12>
       <v-scroll-y-transition mode="out-in">
-        TEXT
+        <translations-list />
       </v-scroll-y-transition>
     </v-flex>
-  </v-layout>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'LanguagesList',
+  name: 'Translations',
+  components: {
+    TranslationsList: () => import('@/containers/TranslationsList.vue'),
+  },
 };
 </script>
 

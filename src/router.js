@@ -42,17 +42,22 @@ export default new Router({
         {
           path: 'false-friends',
           name: 'falseFriends',
-          component: () => import('./views/Languages.vue'),
+          component: () => import('./views/Translations.vue'),
         },
         {
           path: 'machine-translation',
           name: 'machineTranslation',
-          component: () => import('./views/Languages.vue'),
+          component: () => import('./views/Translations.vue'),
         },
         {
-          path: 'languages',
-          name: 'languages',
-          component: () => import('./views/Languages.vue'),
+          path: 'translations',
+          name: 'translations',
+          component: () => import('./views/Translations.vue'),
+        },
+        {
+          path: 'phrase/:phraseId',
+          name: 'phrase',
+          component: () => import('./views/PhraseTranslations.vue'),
         },
         {
           path: 'slangs',

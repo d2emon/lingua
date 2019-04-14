@@ -22,10 +22,22 @@ export const fetchSlangs = () => Axios
 
 export const fetchSlang = slug => Axios
   .get(`slangs/${slug}`)
-  // .then(({ data }) => Promise.resolve(data.slang))
   .then(({ data }) => data.slang)
   .then(({ text, appendix, ...slang }) => ({
     ...slang,
+    text: text && markdown2html(text),
+    appendix: appendix && markdown2html(appendix),
+  }));
+
+export const fetchPhrases = () => Axios
+  .get('translations')
+  .then(({ data }) => data.translations);
+
+export const fetchTranslation = slug => Axios
+  .get(`translations/${slug}`)
+  .then(({ data }) => data.translations)
+  .then(({ text, appendix, ...translation }) => ({
+    ...translation,
     text: text && markdown2html(text),
     appendix: appendix && markdown2html(appendix),
   }));

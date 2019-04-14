@@ -1,4 +1,3 @@
-import { markdown2html } from '../../helpers';
 import {
   fetchSlang,
   fetchSlangs,
